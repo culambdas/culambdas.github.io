@@ -30,3 +30,5 @@
 - Footnote of homepage/hero -> Contact us
 - Photo gallery (???)
 - JSON to store bro crossing sem, info and pics
+  - We have two JSON files (full roster, active house)
+- Python for administrative things
