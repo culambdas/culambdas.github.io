@@ -1,11 +1,8 @@
 import './navbar.css';
-import { useState } from 'react';
 import { FcMenu } from 'react-icons/fc';
 import { AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
-  const [opened, toggleOpen] = useState(false);
-
   const openNav = () => {
     document.documentElement.style.overflow = 'hidden'; // firefox, chrome
     document.body.scroll = 'no'; // ie only
