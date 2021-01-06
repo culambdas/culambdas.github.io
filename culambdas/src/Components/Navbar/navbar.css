@@ -11,10 +11,11 @@
   /* background-color: #f5f5f5; */
   box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
 }
+
 #navbar img {
   margin: 12px 0px 12px 10px;
-  max-width: 45px;
-  min-width: 45px;
+  max-width: 35px;
+  min-width: 35px;
   width: 100%;
   height: auto;
 }

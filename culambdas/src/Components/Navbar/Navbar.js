@@ -1,5 +1,6 @@
 import './navbar.css';
-import { FcMenu } from 'react-icons/fc';
+import Crest from '../../static/images/Crest.png';
+import { VscMenu } from 'react-icons/vsc';
 import { AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
@@ -18,8 +19,14 @@ const Navbar = () => {
   return (
     <>
       <div id="navbar">
+        <a href="/">
+          <img src={Crest} alt="lfecrest" />
+        </a>
         <div className="nav-toggle">
-          <FcMenu onClick={openNav} style={{ cursor: 'pointer' }}></FcMenu>
+          <VscMenu
+            onClick={openNav}
+            style={{ color: 'white', cursor: 'pointer' }}
+          ></VscMenu>
         </div>
       </div>
 
@@ -29,7 +36,7 @@ const Navbar = () => {
         {/* <!-- Overlay content --> */}
         <div className="nav-menu-content">
           <a href="#about">About</a>
-          <a href="#skills">Active House</a>
+          <a href="active-house">Active House</a>
           <a href="#experience">Roster</a>
           <a href="#projects">Rush</a>
         </div>

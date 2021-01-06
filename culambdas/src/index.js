@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 const Navbar = lazy(() => import('./Components/Navbar/Navbar'));
 const Home = lazy(() => import('./Components/Home/Home'));
+const ActiveHouse = lazy(() => import('./Components/ActiveHouse/ActiveHouse'));
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,8 +14,8 @@ ReactDOM.render(
       <Suspense fallback={<div>Loading...</div>}>
         <Navbar />
         <Switch>
-          <Route path="/" component={Home} />
-          {/* <Route path="/about" component={About} /> */}
+          <Route exact path="/" component={Home} />
+          <Route exact path="/active-house" component={ActiveHouse} />
         </Switch>
       </Suspense>
     </Router>
