@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import { StrictMode, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -9,21 +9,17 @@ const Home = lazy(() => import('./Components/Home/Home'));
 const ActiveHouse = lazy(() => import('./Components/ActiveHouse/ActiveHouse'));
 
 ReactDOM.render(
-  <React.StrictMode>
+  <StrictMode>
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
         <Navbar />
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/active-house">
-            <ActiveHouse />
-          </Route>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/active-house" component={ActiveHouse} />
         </Switch>
       </Suspense>
     </Router>
-  </React.StrictMode>,
+  </StrictMode>,
   document.getElementById('root')
 );
 
