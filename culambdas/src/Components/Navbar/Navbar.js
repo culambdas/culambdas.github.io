@@ -1,5 +1,6 @@
 import './navbar.css';
-import Crest from '../../static/images/Crest.png';
+import Crest from '../../assets/images/Crest.png';
+import { Link } from 'react-router-dom';
 import { VscMenu } from 'react-icons/vsc';
 import { AiOutlineClose } from 'react-icons/ai';
 
@@ -19,9 +20,9 @@ const Navbar = () => {
   return (
     <>
       <div id="navbar">
-        <a href="/">
+        <Link to="/">
           <img src={Crest} alt="lfecrest" />
-        </a>
+        </Link>
         <div className="nav-toggle">
           <VscMenu
             onClick={openNav}

@@ -1,5 +1,5 @@
 import './home.css';
-import smoke from '../../static/images/smoke.mp4';
+import smoke from '../../assets/images/smoke.mp4';
 
 const Home = () => {
   return (
