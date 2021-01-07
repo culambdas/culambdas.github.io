@@ -75,7 +75,7 @@ const ActiveHouse = () => {
               </li>
               <li id="orion" onClick={openInfoModal}>
                 <div className="roster-photo">
-                  <img src={'/images/test1.jpeg'} />
+                  <img src={'/images/orion.jpeg'} />
                 </div>
                 <div className="roster-caption">
                   <h1>#147</h1>
@@ -84,7 +84,7 @@ const ActiveHouse = () => {
               </li>
               <li id="orion" onClick={openInfoModal}>
                 <div className="roster-photo">
-                  <img src={'/images/test2.jpeg'} />
+                  <img src={'/images/orion.jpeg'} />
                 </div>
                 <div className="roster-caption">
                   <h1>#147</h1>
@@ -93,7 +93,7 @@ const ActiveHouse = () => {
               </li>
               <li id="orion" onClick={openInfoModal}>
                 <div className="roster-photo">
-                  <img src={'/images/test2.jpeg'} />
+                  <img src={'/images/orion.jpeg'} />
                 </div>
                 <div className="roster-caption">
                   <h1>#147</h1>
@@ -102,7 +102,7 @@ const ActiveHouse = () => {
               </li>
               <li id="orion" onClick={openInfoModal}>
                 <div className="roster-photo">
-                  <img src={'/images/test2.jpeg'} />
+                  <img src={'/images/orion.jpeg'} />
                 </div>
                 <div className="roster-caption">
                   <h1>#147</h1>
