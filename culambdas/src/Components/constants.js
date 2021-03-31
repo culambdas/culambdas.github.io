@@ -32,12 +32,3 @@ export const allClasses = {
   charter: 'Charter',
   annex: 'Annex',
 };
-
-export const activeClasses = {
-  'alpha-theta': 'Alpha Theta',
-  'alpha-eta': 'Alpha Eta',
-  'alpha-zeta': 'Alpha Zeta',
-  'alpha-epsilon': 'Alpha Epsilon',
-  'alpha-delta': 'Alpha Delta',
-  'alpha-gamma': 'Alpha Gamma',
-};

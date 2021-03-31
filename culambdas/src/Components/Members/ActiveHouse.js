@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import { activeClasses } from '../constants';
-import memberJson from '../../members.json';
+import { allClasses } from '../constants';
+import activeJson from '../../actives.json';
 import './members.css';
 import MemberModal from '../MemberModal/MemberModal';
 
@@ -60,7 +60,7 @@ export default class ActiveHouse extends Component {
 
           <div className="members-tabs-container">
             <div className="tab-container">
-              {Object.entries(activeClasses).map(([k, v], i) => {
+              {Object.entries(activeJson).map(([k, v], i) => {
                 return (
                   <div
                     key={k}
@@ -68,18 +68,18 @@ export default class ActiveHouse extends Component {
                     className={i === 0 ? 'active' : ''}
                     onClick={this.changeTab}
                   >
-                    {v}
+                    {allClasses[k]}
                   </div>
                 );
               })}
             </div>
 
             <div className="active-class-name">
-              <h1>{`${activeClasses[this.state.activeClass]} Class`}</h1>
+              <h1>{`${allClasses[this.state.activeClass]} Class`}</h1>
             </div>
             <div className="tab-content active">
               <ul>
-                {memberJson[this.state.activeClass].map((e, idx) => {
+                {activeJson[this.state.activeClass].map((e, idx) => {
                   return (
                     <li id={idx} key={idx} onClick={this.openInfoModal}>
                       <div className="roster-photo">
@@ -105,7 +105,7 @@ export default class ActiveHouse extends Component {
 
         <MemberModal
           closeInfoModal={this.closeInfoModal}
-          members={memberJson}
+          members={activeJson}
           activeClass={this.state.activeClass}
           activeBro={this.state.activeBro}
         />
