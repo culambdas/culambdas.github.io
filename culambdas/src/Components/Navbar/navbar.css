@@ -24,6 +24,23 @@
   margin-left: auto;
   padding-right: 10px;
   font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1008px) {
+  .members-hero {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 512px) {
+  .members-hero {
+    height: 50vh;
+  }
+}
+
+.nav-toggle.scroll {
+  color: black;
 }
 
 /* The Overlay (background) */

@@ -7,14 +7,34 @@
   left: 0;
 }
 
-.lfe-splash-text {
+.splash-text {
   position: absolute;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 8em;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.lfe-splash-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10vw;
+}
+
+.cornell-university-splash-text,
+.est-splash-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 615px) {
+  .lfe-splash-text {
+    font-size: 5em;
+  }
+  .cornell-university-splash-text,
+  .est-splash-text {
+    font-size: 12px;
+  }
 }
 
 .fade-in {
