@@ -19,7 +19,7 @@ export default class ActiveHouse extends Component {
   }
 
   changeTab(event) {
-    this.setState({ activeClass: event.target.id }, () => {
+    this.setState({ activeClass: event.target.id, activeBro: 0 }, () => {
       var prevTab = document.querySelector('.tab-container .active');
       prevTab.classList.remove('active');
       var activeTab = document.getElementById(event.target.id);
@@ -86,8 +86,9 @@ export default class ActiveHouse extends Component {
                         <img
                           alt={e.nickname}
                           src={
-                            require(`../../assets/members/${e['main-img']}`)
-                              .default
+                            require(`../../assets/members/${
+                              e['main-img'] ? e['main-img'] : 'default.png'
+                            }`).default
                           }
                         />
                       </div>

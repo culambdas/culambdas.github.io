@@ -26,7 +26,8 @@ export default class Roster extends Component {
   }
 
   changeTab(event) {
-    this.setState({ activeClass: event.target.id }, () => {
+    // console.log(event.target);
+    this.setState({ activeClass: event.target.id, activeBro: 0 }, () => {
       var prevTab = document.querySelector('.tab-container .active');
       prevTab.classList.remove('active');
       var activeTab = document.getElementById(event.target.id);
@@ -96,8 +97,9 @@ export default class Roster extends Component {
                         <img
                           alt={e.nickname}
                           src={
-                            require(`../../assets/members/${e['main-img']}`)
-                              .default
+                            require(`../../assets/members/${
+                              e['main-img'] ? e['main-img'] : 'default.png'
+                            }`).default
                           }
                         />
                       </div>

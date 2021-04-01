@@ -10,14 +10,19 @@ const MemberModal = (props) => {
       <div className="roster-flex-container">
         <img
           alt={entry['nickname']}
-          src={require(`../../assets/members/${entry['modal-img']}`).default}
+          src={
+            require(`../../assets/members/${
+              entry['modal-img'] ? entry['modal-img'] : 'default.png'
+            }`).default
+          }
         />
         <div className="roster-info">
           <div className="roster-info-name">
             <h1>{entry.number}</h1>
             <h2>{entry.name}</h2>
           </div>
-          {entry['bio'] ? <p>{entry['bio']}</p> : <br />}
+          {entry['bio'] ? <p>{entry['bio']}</p> : null}
+          <br />
 
           <div className="roster-info-desc">
             <ul>
