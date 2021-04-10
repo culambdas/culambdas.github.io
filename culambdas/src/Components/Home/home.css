@@ -24,6 +24,7 @@
   -o-animation: fadeIn ease 10s;
   -ms-animation: fadeIn ease 10s;
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

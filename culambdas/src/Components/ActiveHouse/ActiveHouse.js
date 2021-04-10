@@ -164,25 +164,24 @@ const ActiveHouse = () => {
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-
-        <div className="roster-info-card-container">
-          <div className="roster-info-card">
-            <h1>Advice to Freshmen</h1>
-            <p>
-              R U S H L A M B D A S but also find your place in college,
-              surround yourself with people that care, and never stop working
-              hard
-            </p>
-          </div>
-          <div className="roster-info-card">
-            <h1>Why I Joined</h1>
-            <p>
-              (I wanted to spread my wholesomeness) but also I made most of my
-              closest friends in the military. Likewise, joining Lambdas has
-              become a home away from home for me.
-            </p>
+            <div className="roster-info-card-container">
+              <div className="roster-info-card">
+                <h1>Advice to Freshmen</h1>
+                <p>
+                  R U S H L A M B D A S but also find your place in college,
+                  surround yourself with people that care, and never stop working
+                  hard
+                </p>
+              </div>
+              <div className="roster-info-card">
+                <h1>Why I Joined</h1>
+                <p>
+                  (I wanted to spread my wholesomeness) but also I made most of my
+                  closest friends in the military. Likewise, joining Lambdas has
+                  become a home away from home for me.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
