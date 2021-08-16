@@ -175,7 +175,7 @@ export default class Leadership extends Component {
 
           <div className="members-tabs-container">
             <div className="tab-content active">
-              <ul id='eboard'>
+              <ul>
                 {this.state.eboard_list.map((e, idx) => {
                   return (
                       <div>
@@ -194,7 +194,6 @@ export default class Leadership extends Component {
                             <h1>{e[0].number}</h1>
                             <span>{e[0].name}</span>
                         </div>
-                        
                         </li>
                         <div>
                             <h1>{e[2]}</h1>

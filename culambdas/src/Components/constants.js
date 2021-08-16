@@ -13,7 +13,7 @@ export const allClasses = {
   phi: 'Phi',
   upsilon: 'Upsilon',
   tau: 'Tau',
-  sigma: 'Tau',
+  sigma: 'Sigma',
   rho: 'Rho',
   pi: 'Pi',
   omicron: 'Omicron',
