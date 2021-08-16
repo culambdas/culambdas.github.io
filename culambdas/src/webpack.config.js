@@ -22,11 +22,9 @@ module.exports = {
         test: /\.(png|jp(e*)g|svg|mp4)$/,
         use: [
           {
-            loader: 'url-loader',
+            loader: 'file-loader',
             options: {
-              limit: 50000, // Convert images less than 50kb
-              // limit: 8000, // Convert images less than 8kb
-              name: 'images/[hash]-[name].[ext]',
+              esModule: false,
             },
           },
         ],

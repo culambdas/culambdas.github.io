@@ -6,7 +6,10 @@ import reportWebVitals from './reportWebVitals';
 
 const Navbar = lazy(() => import('./Components/Navbar/Navbar'));
 const Home = lazy(() => import('./Components/Home/Home'));
-const ActiveHouse = lazy(() => import('./Components/ActiveHouse/ActiveHouse'));
+const Leadership = lazy(() => import('./Components/Leadership/Leadership'));
+const ActiveHouse = lazy(() => import('./Components/Members/ActiveHouse'));
+const Roster = lazy(() => import('./Components/Members/Roster'));
+const Rush = lazy(() => import('./Components/Rush/Rush'));
 
 ReactDOM.render(
   <StrictMode>
@@ -15,7 +18,10 @@ ReactDOM.render(
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/leadership" component={Leadership} />
           <Route exact path="/active-house" component={ActiveHouse} />
+          <Route exact path="/roster" component={Roster} />
+          <Route exact path="/rush" component={Rush} />
         </Switch>
       </Suspense>
     </Router>
