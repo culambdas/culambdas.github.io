@@ -1,4 +1,5 @@
 export const allClasses = {
+  'alpha-iota' : 'Alpha Iota',
   'alpha-theta': 'Alpha Theta',
   'alpha-eta': 'Alpha Eta',
   'alpha-zeta': 'Alpha Zeta',
@@ -12,7 +13,7 @@ export const allClasses = {
   phi: 'Phi',
   upsilon: 'Upsilon',
   tau: 'Tau',
-  sigma: 'Tau',
+  sigma: 'Sigma',
   rho: 'Rho',
   pi: 'Pi',
   omicron: 'Omicron',

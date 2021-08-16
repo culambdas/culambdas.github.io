@@ -20,7 +20,7 @@ export default class Roster extends Component {
     this.closeInfoModal = this.closeInfoModal.bind(this);
 
     this.state = {
-      activeClass: 'alpha-theta',
+      activeClass: 'alpha-iota',
       activeBro: 0,
     };
   }

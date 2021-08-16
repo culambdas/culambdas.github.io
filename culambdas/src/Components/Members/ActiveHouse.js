@@ -13,7 +13,7 @@ export default class ActiveHouse extends Component {
     this.closeInfoModal = this.closeInfoModal.bind(this);
 
     this.state = {
-      activeClass: 'alpha-theta',
+      activeClass: 'alpha-iota',
       activeBro: 0,
     };
   }
@@ -54,7 +54,7 @@ export default class ActiveHouse extends Component {
         <div className="members-hero">
           <div className="active-house-image">
             <div className="members-image-text">
-              <h1>Spring 2021 Active House</h1>
+              <h1>Fall 2021 </h1> <h1> Active House</h1>
             </div>
           </div>
 

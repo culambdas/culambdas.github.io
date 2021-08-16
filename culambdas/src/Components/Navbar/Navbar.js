@@ -75,10 +75,10 @@ export default class Navbar extends Component {
           <div className="nav-menu-content">
             <a href="/">Home</a>
             <a href="#about">About</a>
-            <a href="#leadership">Leadership</a>
+            <a href="leadership">Leadership</a>
             <a href="active-house">Active House</a>
             <a href="roster">Roster</a>
-            <a href="#rush">Rush</a>
+            <a href="/rush">Rush</a>
           </div>
         </div>
       </>
