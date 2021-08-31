@@ -18,6 +18,11 @@
   position: relative;
 }
 
+.center-text {
+  display: flex;
+  justify-content: center;
+}
+
 .roster-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../../assets/images/roster.jpeg');
@@ -112,7 +117,7 @@
 .tab-content ul {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 20rem));
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
   grid-auto-flow: row;
   gap: 1rem;
   justify-content: center;

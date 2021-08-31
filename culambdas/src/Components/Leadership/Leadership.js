@@ -195,7 +195,7 @@ export default class Leadership extends Component {
                             <span>{e[0].name}</span>
                         </div>
                         </li>
-                        <div>
+                        <div class="center-text">
                             <h1>{e[2]}</h1>
                         </div>
                     </div>
