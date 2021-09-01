@@ -10,6 +10,7 @@ const Leadership = lazy(() => import('./Components/Leadership/Leadership'));
 const ActiveHouse = lazy(() => import('./Components/Members/ActiveHouse'));
 const Roster = lazy(() => import('./Components/Members/Roster'));
 const Rush = lazy(() => import('./Components/Rush/Rush'));
+const About = lazy(() => import('./Components/About/About'));
 
 ReactDOM.render(
   <StrictMode>
@@ -22,6 +23,7 @@ ReactDOM.render(
           <Route exact path="/active-house" component={ActiveHouse} />
           <Route exact path="/roster" component={Roster} />
           <Route exact path="/rush" component={Rush} />
+          <Route exact path="/about" component={About} />
         </Switch>
       </Suspense>
     </Router>
