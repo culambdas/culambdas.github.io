@@ -1,20 +1,20 @@
-import { StrictMode, Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import ReactDOM from 'react-dom';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
+import { StrictMode, Suspense, lazy } from "react";
+import { HashRouter, Route, Switch } from "react-router-dom";
+import ReactDOM from "react-dom";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
-const Navbar = lazy(() => import('./Components/Navbar/Navbar'));
-const Home = lazy(() => import('./Components/Home/Home'));
-const Leadership = lazy(() => import('./Components/Leadership/Leadership'));
-const ActiveHouse = lazy(() => import('./Components/Members/ActiveHouse'));
-const Roster = lazy(() => import('./Components/Members/Roster'));
-const Rush = lazy(() => import('./Components/Rush/Rush'));
-const About = lazy(() => import('./Components/About/About'));
+const Navbar = lazy(() => import("./Components/Navbar/Navbar"));
+const Home = lazy(() => import("./Components/Home/Home"));
+const Leadership = lazy(() => import("./Components/Leadership/Leadership"));
+const ActiveHouse = lazy(() => import("./Components/Members/ActiveHouse"));
+const Roster = lazy(() => import("./Components/Members/Roster"));
+const Rush = lazy(() => import("./Components/Rush/Rush"));
+const About = lazy(() => import("./Components/About/About"));
 
 ReactDOM.render(
   <StrictMode>
-    <Router>
+    <HashRouter>
       <Suspense fallback={<div>Loading...</div>}>
         <Navbar />
         <Switch>
@@ -26,9 +26,9 @@ ReactDOM.render(
           <Route exact path="/about" component={About} />
         </Switch>
       </Suspense>
-    </Router>
+    </HashRouter>
   </StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
