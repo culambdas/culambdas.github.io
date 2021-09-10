@@ -18,19 +18,18 @@
 
 .lfe-splash-text {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 10vw;
+  font-size: 20vw;
+  white-space: nowrap;
 }
 
 .cornell-university-splash-text,
 .est-splash-text {
   font-family: 'DM Sans', sans-serif;
   font-size: 18px;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 615px) {
-  .lfe-splash-text {
-    font-size: 5em;
-  }
   .cornell-university-splash-text,
   .est-splash-text {
     font-size: 12px;
