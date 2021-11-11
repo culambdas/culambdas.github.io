@@ -1,10 +1,48 @@
 import { AiOutlineDown } from 'react-icons/ai';
+import memberMap from '../../memberMap.json';
 
 const MemberModal = (props) => {
-  // console.log(props);
-  var entry = props.members[props.activeClass][props.activeBro];
+  let entry;
+  if (!props.activeBro) {
+    entry = null;
+  } else {
+    entry = props.members[props.activeClass].find(
+      (e) => e.nickname === props.activeBro
+    );
+  }
 
-  return (
+  const generateLink = (name, more = false) => {
+    let fst = name.indexOf('"');
+    let tmp = name.slice(fst + 1);
+    let snd = tmp.indexOf('"');
+    let nickname = tmp.slice(0, snd);
+    if (
+      fst !== -1 &&
+      name &&
+      memberMap.hasOwnProperty(nickname) &&
+      props.enableNavigation
+    ) {
+      return (
+        <>
+          <span
+            className="roster-info-link"
+            onClick={() => props.setActive(memberMap[nickname].class, nickname)}
+          >
+            {name}
+          </span>
+          {more ? <span>, </span> : null}
+        </>
+      );
+    } else {
+      return (
+        <>
+          <span>{name}</span> {more ? <span>, </span> : null}
+        </>
+      );
+    }
+  };
+
+  return entry ? (
     <div id="roster-modal">
       <AiOutlineDown onClick={props.closeInfoModal} className="close-modal" />
       <div className="roster-flex-container">
@@ -26,69 +64,81 @@ const MemberModal = (props) => {
 
           <div className="roster-info-desc">
             <ul>
-              {entry['big-bro'] ? (
+              <li>
+                <span className="roster-info-category">Big Bro: </span>
+                {generateLink(entry['big-bro'])}
+              </li>
+              <li>
+                <span className="roster-info-category">Little Bro(s): </span>
+                {entry['little-bro'].map((name, idx) =>
+                  generateLink(name, idx + 1 !== entry['little-bro'].length)
+                )}
+              </li>
+              {entry['prev-chapter'] ? (
                 <li>
-                  <span>Big Bro: </span>
-                  {entry['big-bro']}
-                </li>
-              ) : null}
-              {entry['little-bro'] ? (
-                <li>
-                  <span>Little Bro(s): </span>
-                  {entry['little-bro']}
+                  <span className="roster-info-category">Annex: </span>
+                  {entry['prev-chapter']}
                 </li>
               ) : null}
               {entry['major'] ? (
                 <li>
-                  <span>Major: </span>
+                  <span className="roster-info-category">Major: </span>
                   {entry['major']}
+                </li>
+              ) : null}
+              {entry['year'] ? (
+                <li>
+                  <span className="roster-info-category">Year: </span>
+                  {entry['year']}
                 </li>
               ) : null}
               {entry['email'] ? (
                 <li>
-                  <span>Email: </span>
+                  <span className="roster-info-category">Email: </span>
                   {entry['email']}
                 </li>
               ) : null}
               {entry['facebook'] ? (
                 <li>
-                  <span>Facebook: </span>
+                  <span className="roster-info-category">Facebook: </span>
                   {entry['facebook']}
                 </li>
               ) : null}
               {entry['birthday'] ? (
                 <li>
-                  <span>Birthday: </span>
+                  <span className="roster-info-category">Birthday: </span>
                   {entry['birthday']}
                 </li>
               ) : null}
               {entry['hometown'] ? (
                 <li>
-                  <span>Hometown: </span>
+                  <span className="roster-info-category">Hometown: </span>
                   {entry['hometown']}
                 </li>
               ) : null}
               {entry['dream-ride'] ? (
                 <li>
-                  <span>Dream Ride: </span>
+                  <span className="roster-info-category">Dream Ride: </span>
                   {entry['dream-ride']}
                 </li>
               ) : null}
               {entry['fav-quote'] ? (
                 <li>
-                  <span>Favorite Quote: </span>
+                  <span className="roster-info-category">Favorite Quote: </span>
                   {entry['fav-quote']}
                 </li>
               ) : null}
               {entry['mil-dollars'] ? (
                 <li>
-                  <span>If I had a million dollars: </span>
+                  <span className="roster-info-category">
+                    If I had a million dollars:{' '}
+                  </span>
                   {entry['mil-dollars']}
                 </li>
               ) : null}
               {entry['fun-fact'] ? (
                 <li>
-                  <span>Fun fact: </span>
+                  <span className="roster-info-category">Fun fact: </span>
                   {entry['fun-fact']}
                 </li>
               ) : null}
@@ -113,7 +163,7 @@ const MemberModal = (props) => {
         ) : null}
       </div>
     </div>
-  );
+  ) : null;
 };
 
 export default MemberModal;

@@ -11,30 +11,26 @@ export default class ActiveHouse extends Component {
     this.changeTab = this.changeTab.bind(this);
     this.openInfoModal = this.openInfoModal.bind(this);
     this.closeInfoModal = this.closeInfoModal.bind(this);
+    this.setActive = this.setActive.bind(this);
 
     this.state = {
       activeClass: 'alpha-iota',
-      activeBro: 0,
+      activeBro: '',
     };
   }
 
   changeTab(event) {
-    this.setState({ activeClass: event.target.id, activeBro: 0 }, () => {
+    this.setState({ activeClass: event.target.id, activeBro: '' }, () => {
       var prevTab = document.querySelector('.tab-container .active');
       prevTab.classList.remove('active');
       var activeTab = document.getElementById(event.target.id);
       activeTab.classList.add('active');
     });
-
-    // var prevDesc = document.getElementById(`${prevId}-desc`);
-    // prevDesc.classList.remove('active');
-    // var activeDesc = document.getElementById(`${event.target.id}-desc`);
-    // activeDesc.classList.add('active');
   }
 
   openInfoModal(event) {
-    if (!isNaN(parseInt(event.target.id))) {
-      this.setState({ activeBro: parseInt(event.target.id) }, () => {
+    if (event.target.id) {
+      this.setState({ activeBro: event.target.id }, () => {
         document.getElementById('roster-modal').classList.add('active');
         document.body.style.overflow = 'hidden';
         document.body.scroll = 'no'; // ie only
@@ -46,6 +42,13 @@ export default class ActiveHouse extends Component {
     document.getElementById('roster-modal').classList.remove('active');
     document.body.style.overflow = 'visible';
     document.body.scroll = 'yes'; // ie only
+  }
+
+  setActive(activeClass, activeBro) {
+    this.setState({
+      activeClass,
+      activeBro,
+    });
   }
 
   render() {
@@ -65,7 +68,7 @@ export default class ActiveHouse extends Component {
                   <div
                     key={k}
                     id={k}
-                    className={i === 0 ? 'active' : ''}
+                    className={this.state.activeClass === k ? 'active' : ''}
                     onClick={this.changeTab}
                   >
                     {allClasses[k]}
@@ -75,13 +78,20 @@ export default class ActiveHouse extends Component {
             </div>
 
             <div className="active-class-name">
-              <h1>{`${allClasses[this.state.activeClass]} Class`}</h1>
+              <h1>
+                {allClasses[this.state.activeClass]}
+                {this.state.activeClass === 'annex' ? '' : ' Class'}
+              </h1>
             </div>
             <div className="tab-content active">
               <ul>
                 {activeJson[this.state.activeClass].map((e, idx) => {
                   return (
-                    <li id={idx} key={idx} onClick={this.openInfoModal}>
+                    <li
+                      id={e.nickname}
+                      key={e.nickname}
+                      onClick={this.openInfoModal}
+                    >
                       <div className="roster-photo">
                         <img
                           alt={e.nickname}
@@ -109,6 +119,8 @@ export default class ActiveHouse extends Component {
           members={activeJson}
           activeClass={this.state.activeClass}
           activeBro={this.state.activeBro}
+          setActive={this.setActive}
+          enableNavigation={false}
         />
       </section>
     );

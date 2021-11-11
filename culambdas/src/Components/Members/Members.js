@@ -1,8 +1,8 @@
 import { Component } from 'react';
 import { allClasses } from '../constants';
-import memberJson from '../../members.json';
 import './members.css';
 import MemberModal from '../MemberModal/MemberModal';
+
 export default class Roster extends Component {
   constructor(props) {
     super(props);
@@ -10,12 +10,20 @@ export default class Roster extends Component {
     this.changeTab = this.changeTab.bind(this);
     this.openInfoModal = this.openInfoModal.bind(this);
     this.closeInfoModal = this.closeInfoModal.bind(this);
-    this.setActive = this.setActive.bind(this);
 
     this.state = {
       activeClass: 'alpha-iota',
       activeBro: '',
     };
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.heading !== this.props.heading) {
+      this.setState({
+        activeClass: 'alpha-iota',
+        activeBro: '',
+      });
+    }
   }
 
   changeTab(event) {
@@ -26,6 +34,11 @@ export default class Roster extends Component {
       var activeTab = document.getElementById(event.target.id);
       activeTab.classList.add('active');
     });
+
+    // var prevDesc = document.getElementById(`${prevId}-desc`);
+    // prevDesc.classList.remove('active');
+    // var activeDesc = document.getElementById(`${event.target.id}-desc`);
+    // activeDesc.classList.add('active');
   }
 
   openInfoModal(event) {
@@ -44,31 +57,26 @@ export default class Roster extends Component {
     document.body.scroll = 'yes'; // ie only
   }
 
-  setActive(activeClass, activeBro) {
-    this.setState({
-      activeClass,
-      activeBro,
-    });
-  }
-
   render() {
+    console.log(Object.entries(this.props.jsonData));
     return (
       <section id="roster">
         <div className="members-hero">
           <div className="roster-image">
             <div className="members-image-text">
-              <h1>Roster</h1>
+              <h1>{this.props.heading}</h1>
+              {this.props.subHeading ? <h1>{this.props.subHeading}</h1> : null}
             </div>
           </div>
 
           <div className="members-tabs-container">
             <div className="tab-container">
-              {Object.entries(memberJson).map(([k, v], i) => {
+              {Object.entries(this.props.jsonData).map(([k, v], i) => {
                 return (
                   <div
                     key={k}
                     id={k}
-                    className={this.state.activeClass === k ? 'active' : ''}
+                    className={i === 0 ? 'active' : ''}
                     onClick={this.changeTab}
                   >
                     {allClasses[k]}
@@ -85,11 +93,11 @@ export default class Roster extends Component {
             </div>
             <div className="tab-content active">
               <ul>
-                {memberJson[this.state.activeClass].map((e, idx) => {
+                {this.props.jsonData[this.state.activeClass].map((e, idx) => {
                   return (
                     <li
-                      id={e.nickname}
-                      key={e.nickname}
+                      id={e.number}
+                      key={e.number}
                       onClick={this.openInfoModal}
                     >
                       <div className="roster-photo">
@@ -116,11 +124,9 @@ export default class Roster extends Component {
 
         <MemberModal
           closeInfoModal={this.closeInfoModal}
-          members={memberJson}
+          members={this.props.jsonData}
           activeClass={this.state.activeClass}
           activeBro={this.state.activeBro}
-          setActive={this.setActive}
-          enableNavigation={true}
         />
       </section>
     );
