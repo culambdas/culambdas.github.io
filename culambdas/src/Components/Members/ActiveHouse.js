@@ -2,6 +2,7 @@ import { Component } from 'react';
 import { allClasses } from '../constants';
 import activeJson from '../../actives.json';
 import './members.css';
+import '../../assets/styles.css';
 import MemberModal from '../MemberModal/MemberModal';
 
 export default class ActiveHouse extends Component {
@@ -54,10 +55,12 @@ export default class ActiveHouse extends Component {
   render() {
     return (
       <section id="active-house">
-        <div className="members-hero">
-          <div className="active-house-image">
-            <div className="members-image-text">
-              <h1>Fall 2021</h1> <h1>Active House</h1>
+        <div className="hero">
+          <div className="hero-image active-house-hero">
+            <div className="hero-text">
+              <h1>
+                Fall 2021 <br /> Active House
+              </h1>
             </div>
           </div>
 

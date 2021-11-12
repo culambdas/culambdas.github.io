@@ -2,6 +2,7 @@ import { Component } from 'react';
 import { allClasses } from '../constants';
 import memberJson from '../../members.json';
 import './members.css';
+import '../../assets/styles.css';
 import MemberModal from '../MemberModal/MemberModal';
 export default class Roster extends Component {
   constructor(props) {
@@ -54,9 +55,9 @@ export default class Roster extends Component {
   render() {
     return (
       <section id="roster">
-        <div className="members-hero">
-          <div className="roster-image">
-            <div className="members-image-text">
+        <div className="hero">
+          <div className="hero-image roster-hero">
+            <div className="hero-text">
               <h1>Roster</h1>
             </div>
           </div>

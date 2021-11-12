@@ -1,97 +1,19 @@
 .about-hero {
-  height: 100vh;
-}
-
-.about-image-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 3em;
-}
-
-@media screen and (max-width: 1008px) {
-  .about-hero {
-    height: 70vh;
-  }
-  .about-image-text {
-    font-size: 2em;
-  }
-}
-@media screen and (max-width: 512px) {
-  .about-hero {
-    height: 50vh;
-  }
-  .about-image-text {
-    font-size: 1.5em;
-  }
-}
-
-.about-image {
-  /* Set a specific height */
-  height: 100%;
-
-  /* Position and center the image to scale nicely on all screens + Parallax effect */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../assets/images/active-house.jpg');
+    url('../../assets/images/about.jpg');
 }
 
-.president-letter {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 100px 0px;
-  flex-wrap: wrap;
+.national-history-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../assets/images/national-history.jpeg');
 }
 
-.col-3 {
-  position: relative;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 30%;
-  max-width: 30%;
+.service-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../assets/images/service.jpeg');
 }
 
-.col-7 {
-  position: relative;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 60%;
-  max-width: 60%;
-}
-
-.president-letter img {
-  width: 100%;
-}
-
-.president-letter-text {
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-}
-
-.president-letter-text h3,
-h5 {
-  color: #000080;
-}
-
-@media screen and (max-width: 1008px) {
-  .col-3 {
-    flex: 0 0 80%;
-    max-width: 80%;
-  }
-  .col-7 {
-    flex: 0 0 80%;
-    max-width: 80%;
-  }
+.alumni-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../assets/images/alumni.jpeg');
 }

@@ -1,14 +1,15 @@
 import './home.css';
+import '../../assets/styles.css';
 import smoke from '../../assets/images/smoke.mp4';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <section id="home">
-      <div className="home-screen">
-        <video className="hero" autoPlay loop muted>
+      <div>
+        <video className="smoke" autoPlay loop muted>
           <source src={smoke} type="video/mp4" />
         </video>
         <div className="splash-text fade-in">
@@ -22,11 +23,14 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="president-letter">
-        <div className="col-3">
-          <img src={require('../../assets/images/president.jpg').default}></img>
+      <div className="flex-container" style={{ marginTop: 80 }}>
+        <div className="col-4">
+          <img
+            src={require('../../assets/images/president.jpg').default}
+            alt="President"
+          />
         </div>
-        <div className="col-7 president-letter-text">
+        <div className="col-6 justify-text">
           <h2>Letter from our Chapter President</h2>
           <p>
             On behalf of the brothers, I would like to welcome you to the
@@ -65,36 +69,52 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="learn-more">
-        <div className="learn-more-item" onClick={() => navigate('about')}>
-          <img src={require('../../assets/images/about.jpeg').default} />
-          <div className="learn-more-caption">
+      <div className="home-grid">
+        <div className="home-grid-item" onClick={() => navigate('about')}>
+          <img
+            src={require('../../assets/images/about.jpg').default}
+            alt="About"
+          />
+
+          <div className="home-grid-caption">
             <h3>ABOUT US</h3>
             <p>Our History &#38; Mission</p>
           </div>
         </div>
         <div
-          className="learn-more-item"
+          className="home-grid-item"
           onClick={() => navigate('active-house')}
         >
-          <img src={require('../../assets/images/active-house.jpg').default} />
-          <div className="learn-more-caption">
+          <img
+            src={require('../../assets/images/active-house.jpg').default}
+            alt="Active House"
+          />
+
+          <div className="home-grid-caption">
             <h3>ACTIVE HOUSE</h3>
             <p>Meet the brothers</p>
           </div>
         </div>
-        <div className="learn-more-item" onClick={() => navigate('leadership')}>
-          <img src={require('../../assets/images/leadership.jpg').default} />
-          <div className="learn-more-caption">
+        <div className="home-grid-item" onClick={() => navigate('leadership')}>
+          <img
+            src={require('../../assets/images/leadership.jpg').default}
+            alt="Leadership"
+          />
+
+          <div className="home-grid-caption">
             <h3>LEADERSHIP</h3>
             <p>The executive board</p>
           </div>
         </div>
-        <div className="learn-more-item" onClick={() => navigate('rush')}>
-          <img src={require('../../assets/images/about.jpeg').default} />
-          <div className="learn-more-caption">
+        <div className="home-grid-item" onClick={() => navigate('rush')}>
+          <img
+            src={require('../../assets/images/rush.jpeg').default}
+            alt="Rush"
+          />
+
+          <div className="home-grid-caption">
             <h3>RUSH</h3>
-            <p>Join Us!</p>
+            <p>Learn more</p>
           </div>
         </div>
       </div>

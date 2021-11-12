@@ -11,6 +11,7 @@ const ActiveHouse = lazy(() => import('./Components/Members/ActiveHouse'));
 const Roster = lazy(() => import('./Components/Members/Roster'));
 const Rush = lazy(() => import('./Components/Rush/Rush'));
 const About = lazy(() => import('./Components/About/About'));
+const Footer = lazy(() => import('./Components/Footer/Footer'));
 
 ReactDOM.render(
   <StrictMode>
@@ -25,6 +26,7 @@ ReactDOM.render(
           <Route exact path="/rush" element={<Rush />} />
           <Route exact path="/about" element={<About />} />
         </Routes>
+        <Footer />
       </Suspense>
     </HashRouter>
   </StrictMode>,

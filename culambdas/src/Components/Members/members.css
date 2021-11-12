@@ -1,14 +1,10 @@
-/* ACTIVE HOUSE HERO */
-.members-hero {
-  height: 100vh;
+.center-text {
+  display: flex;
+  justify-content: center;
 }
 
-.active-house-image,
-.roster-image,
-.leadership-image,
 .class-image {
-  /* Set a specific height */
-  height: 100%;
+  height: 50vh;
 
   /* Position and center the image to scale nicely on all screens + Parallax effect */
   background-position: center;
@@ -18,55 +14,14 @@
   position: relative;
 }
 
-.center-text {
-  display: flex;
-  justify-content: center;
-}
-
-.class-image {
-  height: 50vh;
-}
-
-.active-house-image {
+.active-house-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../../assets/images/active-house.jpg');
 }
 
-.leadership-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../assets/images/leadership.jpg');
-}
-
-.roster-image {
+.roster-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../../assets/images/roster.jpeg');
-}
-
-.members-image-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 3em;
-}
-
-@media screen and (max-width: 1008px) {
-  .members-hero {
-    height: 70vh;
-  }
-  .members-image-text {
-    font-size: 2em;
-  }
-}
-@media screen and (max-width: 512px) {
-  .members-hero {
-    height: 50vh;
-  }
-  .members-image-text {
-    font-size: 1.5em;
-  }
 }
 
 /* ACTIVE HOUSE/ROSTER TABS */
@@ -91,6 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100px;
   margin: 5px 10px 0px 10px;
   padding: 15px 15px;
@@ -455,32 +411,4 @@
   50% {
     transform: translateY(-10px);
   }
-}
-
-/* EXEC BOARD */
-
-.exec-item {
-  display: grid;
-  grid-template-rows: 1fr auto;
-  overflow: hidden;
-  width: 100%;
-  color: white;
-  cursor: default !important;
-}
-
-.exec-photo {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-row: 1 / 3;
-  grid-column: 1;
-  width: 100%;
-}
-
-.exec-photo img {
-  display: block;
-  grid-row: 1;
-  grid-column: 1;
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
 }
