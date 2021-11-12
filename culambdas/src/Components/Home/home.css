@@ -107,7 +107,7 @@
   -webkit-transition: color 0.35s;
   transition: color 0.35s;
   cursor: pointer;
-  z-index: 999;
+  z-index: 3;
 }
 
 @media screen and (max-width: 600px) {
