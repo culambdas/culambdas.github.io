@@ -13,7 +13,7 @@ export default class Roster extends Component {
     this.setActive = this.setActive.bind(this);
 
     this.state = {
-      activeClass: 'alpha-iota',
+      activeClass: 'alpha-theta',
       activeBro: '',
     };
   }
@@ -77,12 +77,20 @@ export default class Roster extends Component {
               })}
             </div>
 
-            <div className="active-class-name">
-              <h1>
-                {allClasses[this.state.activeClass]}
-                {this.state.activeClass === 'annex' ? '' : ' Class'}
-              </h1>
+            <div
+              className="class-image"
+              style={{
+                backgroundImage: `url("../../assets/classes/${this.state.activeClass}.png")`,
+              }}
+            >
+              <div className="active-class-name">
+                <h1>
+                  {allClasses[this.state.activeClass]}
+                  {this.state.activeClass === 'annex' ? '' : ' Class'}
+                </h1>
+              </div>
             </div>
+
             <div className="tab-content active">
               <ul>
                 {memberJson[this.state.activeClass].map((e, idx) => {

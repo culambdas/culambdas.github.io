@@ -1,5 +1,6 @@
 export const allClasses = {
-  'alpha-iota' : 'Alpha Iota',
+  'alpha-kappa': 'Alpha Kappa',
+  'alpha-iota': 'Alpha Iota',
   'alpha-theta': 'Alpha Theta',
   'alpha-eta': 'Alpha Eta',
   'alpha-zeta': 'Alpha Zeta',
