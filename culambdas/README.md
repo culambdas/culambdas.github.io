@@ -8,7 +8,7 @@ There are certain files you must change when you add a new class
 - members.json (Update big bros and little bros)
 - actives.json (Copy paste from members.json)
 - Update `allClasses` in constants.js
-- Add new class images to assets/classes and assets/members
+- Add new class images to assets/classes and assets/members (compress photos [here](https://compresspng.com/))
 - Update the state property `activeClass` in ActiveHouse.js and Roster.js to be the newest class
 - Run `npm run build` and `npm run deploy`
 
