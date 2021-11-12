@@ -60,72 +60,72 @@ export default class Roster extends Component {
             <div className="hero-text">
               <h1>Roster</h1>
             </div>
-          </div>
+          </div>{' '}
+        </div>
 
-          <div className="members-tabs-container">
-            <div className="tab-container">
-              {Object.entries(memberJson).map(([k, v], i) => {
-                return (
-                  <div
-                    key={k}
-                    id={k}
-                    className={this.state.activeClass === k ? 'active' : ''}
-                    onClick={this.changeTab}
-                  >
-                    {allClasses[k]}
-                  </div>
-                );
-              })}
-            </div>
+        <div className="members-tabs-container">
+          <div className="tab-container">
+            {Object.entries(memberJson).map(([k, v], i) => {
+              return (
+                <div
+                  key={k}
+                  id={k}
+                  className={this.state.activeClass === k ? 'active' : ''}
+                  onClick={this.changeTab}
+                >
+                  {allClasses[k]}
+                </div>
+              );
+            })}
           </div>
+        </div>
 
-          <div
-            className="class-image"
-            style={{
-              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(
+        <div
+          className="class-image"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(
                   ${
                     require(`../../assets/classes/${this.state.activeClass}.png`)
                       .default
                   }
                 )`,
-            }}
-          >
-            <div className="active-class-name">
-              <h1>
-                {allClasses[this.state.activeClass]}
-                {this.state.activeClass === 'annex' ? '' : ' Class'}
-              </h1>
-            </div>
+          }}
+        >
+          <div className="active-class-name">
+            <h1>
+              {allClasses[this.state.activeClass]}
+              {this.state.activeClass === 'annex' ? '' : ' Class'}
+            </h1>
           </div>
+        </div>
 
-          <div className="tab-content active">
-            <ul>
-              {memberJson[this.state.activeClass].map((e, idx) => {
-                return (
-                  <li
-                    id={e.nickname}
-                    key={e.nickname}
-                    onClick={this.openInfoModal}
-                  >
-                    <div className="roster-photo">
-                      <img
-                        alt={e.nickname}
-                        src={
-                          require(`../../assets/members/${
-                            e['main-img'] ? e['main-img'] : 'default.png'
-                          }`).default
-                        }
-                      />
-                    </div>
-                    <div className="roster-caption">
-                      <h1>{e.number}</h1>
-                      <span>{e.name}</span>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+        <div className="tab-content active">
+          <ul>
+            {memberJson[this.state.activeClass].map((e, idx) => {
+              return (
+                <li
+                  id={e.nickname}
+                  key={e.nickname}
+                  onClick={this.openInfoModal}
+                >
+                  <div className="roster-photo">
+                    <img
+                      alt={e.nickname}
+                      src={
+                        require(`../../assets/members/${
+                          e['main-img'] ? e['main-img'] : 'default.png'
+                        }`).default
+                      }
+                    />
+                  </div>
+                  <div className="roster-caption">
+                    <h1>{e.number}</h1>
+                    <span>{e.name}</span>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </div>
 
         <MemberModal

@@ -10,6 +10,16 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+section {
+  height: 100%;
+}
+
 .hero {
   height: 100vh;
 }

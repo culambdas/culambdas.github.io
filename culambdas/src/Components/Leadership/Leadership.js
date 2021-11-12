@@ -65,39 +65,39 @@ export default class Leadership extends Component {
               </h1>
             </div>
           </div>
+        </div>
 
-          <div className="leadership-container">
-            <div className="leadership-content">
-              <ul>
-                {this.state.eboard_list.map((e, idx) => {
-                  return (
-                    <div>
-                      <li id={idx} key={idx}>
-                        <div className="leadership-photo">
-                          <img
-                            alt={e[0].nickname}
-                            src={
-                              require(`../../assets/members/${
-                                e[0]['main-img']
-                                  ? e[0]['main-img']
-                                  : 'default.png'
-                              }`).default
-                            }
-                          />
-                        </div>
-                        <div className="leadership-caption">
-                          <h1>{e[0].number}</h1>
-                          <span>{e[0].name}</span>
-                        </div>
-                      </li>
-                      <div class="leadership-position">
-                        <h1>{e[2]}</h1>
+        <div className="leadership-container">
+          <div className="leadership-content">
+            <ul>
+              {this.state.eboard_list.map((e, idx) => {
+                return (
+                  <div>
+                    <li id={idx} key={idx}>
+                      <div className="leadership-photo">
+                        <img
+                          alt={e[0].nickname}
+                          src={
+                            require(`../../assets/members/${
+                              e[0]['main-img']
+                                ? e[0]['main-img']
+                                : 'default.png'
+                            }`).default
+                          }
+                        />
                       </div>
+                      <div className="leadership-caption">
+                        <h1>{e[0].number}</h1>
+                        <span>{e[0].name}</span>
+                      </div>
+                    </li>
+                    <div class="leadership-position">
+                      <h1>{e[2]}</h1>
                     </div>
-                  );
-                })}
-              </ul>
-            </div>
+                  </div>
+                );
+              })}
+            </ul>
           </div>
         </div>
       </section>

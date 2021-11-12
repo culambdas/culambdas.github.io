@@ -53,6 +53,8 @@
   flex-wrap: wrap;
   background-color: #0047ab;
   color: white;
+  position: relative;
+  bottom: 0;
 }
 
 .footer-content ul {
