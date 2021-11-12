@@ -129,7 +129,7 @@ const About = () => {
           />
         </div>
         <div class="col-6 justify-text">
-          <p>
+          <p style={{ marginTop: 0 }}>
             Ethnic fraternities developed as a result of the need to share and
             celebrate diversity of cultural experiences. The first Asian
             fraternity was founded at Cornell in 1916 as Rho Psi, which now
@@ -142,7 +142,7 @@ const About = () => {
       </div>
       <div class="flex-container">
         <div class="col-6 justify-text">
-          <p>
+          <p style={{ marginTop: 0 }}>
             Lambda Phi Epsilon was founded on February 25, 1981, by principal
             founder <b>Craig Ishigo</b> and a group of eighteen other dedicated
             men on the campus of University of California at Los Angeles. By
@@ -176,7 +176,7 @@ const About = () => {
           />
         </div>
         <div class="col-6 justify-text">
-          <p>
+          <p style={{ marginTop: 0 }}>
             By 1990, six chapters had formed at the Universities of California
             at Los Angeles, Davis, Santa Barbara, Berkeley and Irvine and at the
             University of Texas at Austin. The brothers of the first chapters of
@@ -188,7 +188,7 @@ const About = () => {
       </div>
       <div class="flex-container">
         <div class="col-6 justify-text">
-          <p>
+          <p style={{ marginTop: 0 }}>
             On May 28, 1990, a national governing body was established to
             coordinate individual chapter efforts at the first National
             Convention. Robert Mimaki, a Beta Chapter brother, was elected as
@@ -249,7 +249,7 @@ const About = () => {
       </div>
       <div class="flex-container">
         <div class="col-6 justify-text">
-          <p>
+          <p style={{ marginTop: 0 }}>
             In addition to our contributions to AADP, members of Cornell Lambda
             Phi Epsilon are very active in other parts the community at Cornell.
             The Fraternity has participated in countless other projects
@@ -294,7 +294,7 @@ const About = () => {
       </div>
       <div class="flex-container">
         <div class="col-6 justify-text">
-          <p>
+          <p style={{ marginTop: 0 }}>
             On campus, we aim to engage the community on the term “Asian
             American”. Similar to the Asian American activists of the Civil
             Rights era, the local chapter of Lambda Phi Epsilon views
