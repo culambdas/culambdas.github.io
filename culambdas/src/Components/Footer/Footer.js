@@ -9,11 +9,6 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div className="footer-content">
-        <h3>© 2021 Cornell Lambda Phi Epsilon</h3>
-        <p>Site created by Jongwan Kim &#38; Samuel Lye</p>
-      </div>
-
-      <div className="footer-content">
         <h3>Website Navigation</h3>
         <ul>
           <li onClick={() => navigate('/')}>Home</li>
@@ -66,6 +61,10 @@ const Footer = () => {
             </a>
           </li>
         </ul>
+      </div>
+      <div className="footer-content">
+        <h3>© 2021 Cornell Lambda Phi Epsilon</h3>
+        <p>Site created by Jongwan Kim &#38; Samuel Lye</p>
       </div>
     </footer>
   );
