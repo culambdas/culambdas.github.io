@@ -85,7 +85,7 @@ export default class Roster extends Component {
           style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(
                   ${
-                    require(`../../assets/classes/${this.state.activeClass}.png`)
+                    require(`../../assets/classes/${this.state.activeClass}.jpg`)
                       .default
                   }
                 )`,
@@ -113,7 +113,7 @@ export default class Roster extends Component {
                       alt={e.nickname}
                       src={
                         require(`../../assets/members/${
-                          e['main-img'] ? e['main-img'] : 'default.png'
+                          e['main-img'] ? e['main-img'] : 'default.jpg'
                         }`).default
                       }
                     />

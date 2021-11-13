@@ -6,35 +6,35 @@ const secretary = {
   number: '#156',
   nickname: 'Argo',
   name: 'Jongwan "Argo" Kim',
-  'main-img': 'Argo.png',
+  'main-img': 'Argo.jpg',
 };
 
 const vpe = {
   number: '#157',
   nickname: 'Vision',
   name: 'Kevin "Vision" Park',
-  'main-img': 'Vision.png',
+  'main-img': 'Vision.jpg',
 };
 
 const president = {
   number: '#149',
   nickname: 'Apex',
   name: 'Simon "Apex" Liu',
-  'main-img': 'Apex.png',
+  'main-img': 'Apex.jpg',
 };
 
 const vpi = {
   number: '#150',
   nickname: 'Enigma',
   name: 'Naotaka "Enigma" Kinoshita',
-  'main-img': 'Enigma.png',
+  'main-img': 'Enigma.jpg',
 };
 
 const treasurer = {
   number: '#148',
   nickname: 'Stratos',
   name: 'Matt "Stratos" Zhao',
-  'main-img': 'Stratos.png',
+  'main-img': 'Stratos.jpg',
 };
 
 export default class Leadership extends Component {
@@ -81,7 +81,7 @@ export default class Leadership extends Component {
                             require(`../../assets/members/${
                               e[0]['main-img']
                                 ? e[0]['main-img']
-                                : 'default.png'
+                                : 'default.jpg'
                             }`).default
                           }
                         />

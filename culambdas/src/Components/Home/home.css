@@ -108,12 +108,14 @@
   transition: color 0.35s;
   cursor: pointer;
   z-index: 3;
+  height: 45vh;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .home-grid-item {
     flex: 0 0 85%;
     max-width: 85%;
+    height: 30vh;
   }
 }
 

@@ -50,7 +50,7 @@ const MemberModal = (props) => {
           alt={entry['nickname']}
           src={
             require(`../../assets/members/${
-              entry['modal-img'] ? entry['modal-img'] : 'default.png'
+              entry['modal-img'] ? entry['modal-img'] : 'default.jpg'
             }`).default
           }
         />
