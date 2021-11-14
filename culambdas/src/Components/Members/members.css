@@ -97,7 +97,7 @@
 .tab-content ul {
   display: grid;
   grid-template-rows: auto;
-  /* grid-template-columns: repeat(auto-fit, minmax(8rem, 16rem)); */
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
   grid-auto-flow: row;
   gap: 1rem;
   justify-content: center;
