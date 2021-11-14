@@ -1,5 +1,4 @@
 import './about.css';
-import '../../assets/styles.css';
 
 const About = () => {
   return (
@@ -11,15 +10,137 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div class="flex-container" style={{ marginTop: 80 }}>
-        <div class="col-4">
+
+      <div className="fast-facts">
+        <div className="fast-facts-intro">
+          <div className="fast-facts-text">
+            <h3>Mission</h3>
+            <p>
+              To guide men on a lifelong discovery of authenticity and personal
+              growth.
+            </p>
+          </div>
+
+          <div className="fast-facts-text">
+            <h3>Vision</h3>
+            <p>
+              A world where Lambda men live authentic, fulfilling lives and
+              contribute through the pursuit of their noble purpose.
+            </p>
+          </div>
+
+          <div className="fast-facts-text">
+            <h3>Core Values</h3>
+            <p>
+              <b>Authenticity</b>: Demonstration of one’s true self to the
+              world, despite external expectations.
+            </p>
+            <p>
+              <b>Courageous Leadership</b>: Integrity through action toward a
+              more humane world, especially in times of adversity.
+            </p>
+            <p>
+              <b>Cultural Heritage</b>: Ideas and experiences of a people,
+              transcending the world through generations.
+            </p>
+            <p>
+              <b>Love</b>: Care and respect for oneself, the brotherhood, and
+              the world.
+            </p>
+            <p>
+              <b>Wisdom</b>: Pursuit of understanding and its positive
+              application toward one’s life and the world.
+            </p>
+          </div>
+        </div>
+        <div className="fast-facts-icons">
+          <div className="fact-container">
+            <div className="about-icon-container">
+              <i className="icon-quote-left about-icon" />
+            </div>
+            <div className="about-icon-text">
+              <h5>Motto</h5>
+              <p>Leaders Among Men</p>
+            </div>
+          </div>
+          <div className="fact-container">
+            <div className="about-icon-container">
+              <i className="icon-flag about-icon" />
+            </div>
+            <div className="about-icon-text">
+              <h5>Colors</h5>
+              <p>Royal Blue and White</p>
+            </div>
+          </div>
+
+          <div className="fact-container">
+            <div className="about-icon-container">
+              <i className="icon-shield about-icon" />
+            </div>
+            <div className="about-icon-text">
+              <h5>Mascot</h5>
+              <p>Dragon</p>
+            </div>
+          </div>
+
+          <div className="fact-container">
+            <div className="about-icon-container">
+              <i className="icon-group about-icon" />
+            </div>
+            <div className="about-icon-text">
+              <h5>Nicknames</h5>
+              <p>Lambdas, LFE, LPhiE, 人中王</p>
+            </div>
+          </div>
+          <div className="fact-container">
+            <div className="about-icon-container">
+              <i className="icon-bank about-icon" />
+            </div>
+            <div className="about-icon-text">
+              <h5>Founding Campus</h5>
+              <p>University of California Los Angeles</p>
+            </div>
+          </div>
+          <div className="fact-container">
+            <div className="about-icon-container">
+              <i className="icon-gavel about-icon" />
+            </div>
+            <div className="about-icon-text">
+              <h5>Founding date</h5>
+              <p>February 25, 1981 (UCLA)</p>
+              <p>November 14, 1999 (Cornell)</p>
+            </div>
+          </div>
+          <div className="fact-container">
+            <div className="about-icon-container">
+              <i className="icon-globe about-icon" />
+            </div>
+            <div className="about-icon-text">
+              <h5>Fraternal Scope</h5>
+              <p>International</p>
+            </div>
+          </div>
+          <div className="fact-container">
+            <div className="about-icon-container">
+              <i className="icon-trophy about-icon" />
+            </div>
+            <div className="about-icon-text">
+              <h5>Fraternal Classification</h5>
+              <p>Social and Service</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex-container" style={{ marginTop: 80 }}>
+        <div className="col-4">
           <img
             src={require('../../assets/images/overview.jpg').default}
-            class="about-image"
+            className="about-image"
             alt="Overview"
           />
         </div>
-        <div class="col-6 justify-text">
+        <div className="col-6 justify-text">
           <h2>Overview</h2>
           <p>
             Lambda Phi Epsilon is the largest and only nationally recognized
@@ -44,42 +165,42 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div class="flex-container">
-        <div class="col-6 justify-text">
+      <div className="flex-container">
+        <div className="col-6 justify-text">
           <h2>Brotherhood</h2>
           <p>
             By joining, you will enter a brotherhood that offers friendships
             that last a lifetime. Unlike many college friends who turn out to be
             "class friends" or "semester friends," Lambda Phi Epsilon offers
             brotherhood that values trust and loyalty to the highest. Our
-            brotherhood is expressed in our motto, "To Be Leaders Among Men." We
-            not only seek to bring together a diverse group of men who share
-            interests, concerns, backgrounds, and cultures, but who believe that
-            the strength of many is forged into the power of being one. If you
-            ever had a best friend, you know the closeness you feel with them.
-            The fraternity offers the opportunity to feel that way with numerous
-            people.
+            brotherhood is expressed in our motto,{' '}
+            <b>"To Be Leaders Among Men"</b>. We not only seek to bring together
+            a diverse group of men who share interests, concerns, backgrounds,
+            and cultures, but who believe that the strength of many is forged
+            into the power of being one. If you ever had a best friend, you know
+            the closeness you feel with them. The fraternity offers the
+            opportunity to feel that way with numerous people.
           </p>
         </div>
-        <div class="col-4 reverse">
+        <div className="col-4 reverse">
           <img
             src={require('../../assets/images/brotherhood.jpeg').default}
-            class="about-image"
+            className="about-image"
             alt="Brotherhood"
           />
         </div>
       </div>
-      <div class="flex-container">
-        <div class="col-4">
+      <div className="flex-container">
+        <div className="col-4">
           <img
             src={
               require('../../assets/images/national-connections.jpeg').default
             }
-            class="about-image"
+            className="about-image"
             alt="National Connections"
           />
         </div>
-        <div class="col-6 justify-text">
+        <div className="col-6 justify-text">
           <h2>National Connections</h2>
           <p>
             Lambda Phi Epsilon is an internationally chartered fraternity. With
@@ -113,6 +234,7 @@ const About = () => {
           </p>
         </div>
       </div>
+
       <div className="sub-hero">
         <div className="hero-image national-history-hero">
           <div className="hero-text">
@@ -120,15 +242,15 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div class="flex-container">
-        <div class="col-4">
+      <div className="flex-container">
+        <div className="col-4">
           <img
             src={require('../../assets/images/national-history-1.jpeg').default}
-            class="about-image"
+            className="about-image"
             alt="National History"
           />
         </div>
-        <div class="col-6 justify-text">
+        <div className="col-6 justify-text">
           <p style={{ marginTop: 0 }}>
             Ethnic fraternities developed as a result of the need to share and
             celebrate diversity of cultural experiences. The first Asian
@@ -140,8 +262,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div class="flex-container">
-        <div class="col-6 justify-text">
+      <div className="flex-container">
+        <div className="col-6 justify-text">
           <p style={{ marginTop: 0 }}>
             Lambda Phi Epsilon was founded on February 25, 1981, by principal
             founder <b>Craig Ishigo</b> and a group of eighteen other dedicated
@@ -159,23 +281,23 @@ const About = () => {
             emergence of the largest organization of its kind.
           </p>
         </div>
-        <div class="col-4 reverse">
+        <div className="col-4 reverse">
           <img
             src={require('../../assets/images/national-history-2.jpeg').default}
-            class="about-image"
+            className="about-image"
             alt="National History"
           />
         </div>
       </div>
-      <div class="flex-container">
-        <div class="col-4">
+      <div className="flex-container">
+        <div className="col-4">
           <img
             src={require('../../assets/images/national-history-3.jpeg').default}
-            class="about-image"
+            className="about-image"
             alt="National History"
           />
         </div>
-        <div class="col-6 justify-text">
+        <div className="col-6 justify-text">
           <p style={{ marginTop: 0 }}>
             By 1990, six chapters had formed at the Universities of California
             at Los Angeles, Davis, Santa Barbara, Berkeley and Irvine and at the
@@ -186,8 +308,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div class="flex-container">
-        <div class="col-6 justify-text">
+      <div className="flex-container">
+        <div className="col-6 justify-text">
           <p style={{ marginTop: 0 }}>
             On May 28, 1990, a national governing body was established to
             coordinate individual chapter efforts at the first National
@@ -204,10 +326,10 @@ const About = () => {
             Fraternity, Inc.
           </p>
         </div>
-        <div class="col-4 reverse">
+        <div className="col-4 reverse">
           <img
             src={require('../../assets/images/national-history-4.jpeg').default}
-            class="about-image"
+            className="about-image"
             alt="National History"
           />
         </div>
@@ -220,15 +342,15 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div class="flex-container">
-        <div class="col-4">
+      <div className="flex-container">
+        <div className="col-4">
           <img
             src={require('../../assets/images/service-1.jpg').default}
-            class="about-image"
+            className="about-image"
             alt="Service"
           />
         </div>
-        <div class="col-6 justify-text">
+        <div className="col-6 justify-text">
           <h2>Philanthropy</h2>
           <p>
             On May 28, 1990, a national governing body was established to
@@ -247,8 +369,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div class="flex-container">
-        <div class="col-6 justify-text">
+      <div className="flex-container">
+        <div className="col-6 justify-text">
           <p style={{ marginTop: 0 }}>
             In addition to our contributions to AADP, members of Cornell Lambda
             Phi Epsilon are very active in other parts the community at Cornell.
@@ -260,24 +382,24 @@ const About = () => {
             Foundation.
           </p>
         </div>
-        <div class="col-4 reverse">
+        <div className="col-4 reverse">
           <img
             src={require('../../assets/images/service-2.jpg').default}
-            class="about-image"
+            className="about-image"
             alt="Service"
           />
         </div>
       </div>
 
-      <div class="flex-container">
-        <div class="col-4">
+      <div className="flex-container">
+        <div className="col-4">
           <img
             src={require('../../assets/images/culture-1.jpg').default}
-            class="about-image"
+            className="about-image"
             alt="Culture"
           />
         </div>
-        <div class="col-6 justify-text">
+        <div className="col-6 justify-text">
           <h2>Culture</h2>
           <p>
             In 1968, UC Berkeley student activists Yuji Ichioka and Emma Gee
@@ -292,8 +414,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div class="flex-container">
-        <div class="col-6 justify-text">
+      <div className="flex-container">
+        <div className="col-6 justify-text">
           <p style={{ marginTop: 0 }}>
             On campus, we aim to engage the community on the term “Asian
             American”. Similar to the Asian American activists of the Civil
@@ -311,10 +433,10 @@ const About = () => {
             communities.
           </p>
         </div>
-        <div class="col-4 reverse">
+        <div className="col-4 reverse">
           <img
             src={require('../../assets/images/culture-2.jpg').default}
-            class="about-image"
+            className="about-image"
             alt="Culture"
           />
         </div>
@@ -327,15 +449,15 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div class="flex-container">
-        <div class="col-4">
+      <div className="flex-container">
+        <div className="col-4">
           <img
             src={require('../../assets/images/alumni-1.jpg').default}
-            class="about-image"
+            className="about-image"
             alt="Alumni"
           />
         </div>
-        <div class="col-6 justify-text">
+        <div className="col-6 justify-text">
           <h2>About</h2>
           <p>
             The mission of the Cornell Lambda Phi Epsilon Alumni Association is

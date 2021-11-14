@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../assets/styles.css';
 import './footer.css';
 import { useNavigate } from 'react-router-dom';
 import Crest from '../../assets/images/Crest.png';

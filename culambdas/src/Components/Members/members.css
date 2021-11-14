@@ -97,13 +97,13 @@
 .tab-content ul {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+  /* grid-template-columns: repeat(auto-fit, minmax(8rem, 16rem)); */
   grid-auto-flow: row;
   gap: 1rem;
   justify-content: center;
   width: 100%;
   margin: auto;
-  padding: 0 2rem;
+  padding: 0 30px;
   list-style: none;
   margin-block-start: 0;
   margin-block-end: 0;

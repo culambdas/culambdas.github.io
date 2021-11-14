@@ -1,5 +1,4 @@
 import './rush.css';
-import '../../assets/styles.css';
 import nebula from '../../assets/images/nebula.mp4';
 import fa21front from '../../assets/images/rush/front.png';
 import fa21back from '../../assets/images/rush/back.png';

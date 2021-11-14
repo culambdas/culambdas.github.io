@@ -1,5 +1,4 @@
 import './home.css';
-import '../../assets/styles.css';
 import smoke from '../../assets/images/smoke.mp4';
 import { useNavigate } from 'react-router-dom';
 

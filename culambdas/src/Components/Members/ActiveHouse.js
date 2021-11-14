@@ -2,7 +2,6 @@ import { Component } from 'react';
 import { allClasses } from '../constants';
 import activeJson from '../../actives.json';
 import './members.css';
-import '../../assets/styles.css';
 import MemberModal from '../MemberModal/MemberModal';
 
 export default class ActiveHouse extends Component {

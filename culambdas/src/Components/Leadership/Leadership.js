@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import './leadership.css';
-import '../../assets/styles.css';
 
 const secretary = {
   number: '#156',

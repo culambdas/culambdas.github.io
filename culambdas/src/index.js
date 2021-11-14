@@ -1,7 +1,7 @@
 import { StrictMode, Suspense, lazy } from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './assets/styles.css';
 import reportWebVitals from './reportWebVitals';
 
 const Navbar = lazy(() => import('./Components/Navbar/Navbar'));
