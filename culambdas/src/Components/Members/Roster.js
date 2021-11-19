@@ -59,7 +59,7 @@ export default class Roster extends Component {
             <div className="hero-text">
               <h1>Roster</h1>
             </div>
-          </div>{' '}
+          </div>
         </div>
 
         <div className="members-tabs-container">
