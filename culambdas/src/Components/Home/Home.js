@@ -61,7 +61,7 @@ const Home = () => {
             will gladly help you.
           </p>
           <h4>
-            Simon "Apex" Liu
+            Kazuya "Drift" Chue
             <br />
             Chapter President
           </h4>
