@@ -32,33 +32,10 @@ const Home = () => {
         <div className="col-6 justify-text">
           <h2>Letter from our Chapter President</h2>
           <p>
-            On behalf of the brothers, I would like to welcome you to the
-            official website for the Cornell University – Alpha Kappa Chapter of
-            Lambda Phi Epsilon International Fraternity, Inc. It is an honor to
-            not only be a part of Lambda Phi Epsilon, but also to be serving as
-            Alpha Kappa chapter’s President for 2020. Throughout my time at
-            Cornell, I have seen this chapter cross a multitude of competent and
-            dedicated brothers, and I am excited to witness our chapter’s bright
-            future. Despite the volatile climate surrounding Greek life at many
-            universities nowadays, Alpha Kappa chapter has remained strong and
-            has steadily provided a comfortable, welcoming space for young men
-            of Asian descent on campus to congregate and grow together. Our
-            active house is uniquely diverse, yet united in our passion for our
-            brotherhood — a heterogeneous, yet homogeneous mixture of ambition
-            and dedication. As President, I intend to capitalize on this
-            diversity and each brother’s individual strengths and further
-            solidify our position on campus as Leaders Among Men. Lambda Phi
-            Epsilon has shaped me into the man I am today and provided me with a
-            lifelong family, and I am endlessly grateful for the opportunity to
-            be a part of this eternal brotherhood.
+            On behalf of the brothers, I would like to welcome you to the official website for the Cornell University – Alpha Kappa Chapter of Lambda Phi Epsilon International Fraternity, Inc. It is an honor to not only be a brother of Lambda Phi Epsilon, but to also be serving as Alpha Kappa chapter’s President for 2022. Throughout my time at Cornell, I have seen this chapter cross a multitude of passionate, dedicated, and talented brothers, and I am excited to witness and contribute to our chapter’s bright future. Despite the volatile climate surrounding Greek life at many universities nowadays, Alpha Kappa chapter has remained a strong beacon of leadership, philanthropy, and cultural awareness on campus and has continued to provide a welcoming yet electric environment for young men of Asian descent to bond and grow together. Our active house is uniquely diverse, yet united in our passion for our brotherhood — a heterogeneous, yet homogeneous mixture of ambition and excellence. As President, I intend to capitalize on this diversity and utilize each brother’s individual strengths to further solidify our position on campus as Leaders Among Men. Lambda Phi Epsilon has shaped me into the man I am today and provided me with a lifelong family, and I am endlessly grateful for the opportunity to be a part of this eternal brotherhood.
           </p>
           <p>
-            Thank you for taking the time to learn about my thoughts on Lambda
-            Phi Epsilon. Please feel free to navigate around this website to
-            learn even more about our brothers and what we do to display our
-            sense of brotherhood. If you find yourself with any questions or
-            concerns, feel free to reach out to the executive board and they
-            will gladly help you.
+            Thank you for taking the time to learn about my thoughts on Lambda Phi Epsilon. Please feel free to navigate through this website to learn more about our brothers, activities, and core values to get further insight into our brotherhood. If you find yourself with any questions or concerns, please feel comfortable to reach out to any of the executive board, active brothers, or alumni.
           </p>
           <h4>
             Kazuya "Drift" Chue
