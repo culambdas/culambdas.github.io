@@ -70,6 +70,7 @@ export default class Roster extends Component {
                   key={k}
                   id={k}
                   className={this.state.activeClass === k ? 'active' : ''}
+                  style={{ wordSpacing: '100vw' }} // Forces word break
                   onClick={this.changeTab}
                 >
                   {allClasses[k]}

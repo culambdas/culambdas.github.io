@@ -2,38 +2,38 @@ import { Component } from 'react';
 import './leadership.css';
 
 const secretary = {
+  number: '#164',
+  nickname: 'Ricasso',
+  name: 'Eddie "Ricasso" Chi',
+  'main-img': 'Ricasso.jpg',
+};
+
+const vpe = {
+  number: '#168',
+  nickname: 'Altair',
+  name: 'Kelvin "Altair" Chen',
+  'main-img': 'Altair.jpg',
+};
+
+const president = {
+  number: '#153',
+  nickname: 'Drift',
+  name: 'Kazuya "Drift" Chue',
+  'main-img': 'Drift.jpg',
+};
+
+const vpi = {
   number: '#156',
   nickname: 'Argo',
   name: 'Jongwan "Argo" Kim',
   'main-img': 'Argo.jpg',
 };
 
-const vpe = {
-  number: '#157',
-  nickname: 'Vision',
-  name: 'Kevin "Vision" Park',
-  'main-img': 'Vision.jpg',
-};
-
-const president = {
-  number: '#149',
-  nickname: 'Apex',
-  name: 'Simon "Apex" Liu',
-  'main-img': 'Apex.jpg',
-};
-
-const vpi = {
-  number: '#150',
-  nickname: 'Enigma',
-  name: 'Naotaka "Enigma" Kinoshita',
-  'main-img': 'Enigma.jpg',
-};
-
 const treasurer = {
-  number: '#148',
-  nickname: 'Stratos',
-  name: 'Matt "Stratos" Zhao',
-  'main-img': 'Stratos.jpg',
+  number: '#160',
+  nickname: 'Concord',
+  name: 'Richard "Concord" Lin',
+  'main-img': 'Concord.jpg',
 };
 
 export default class Leadership extends Component {
@@ -58,7 +58,7 @@ export default class Leadership extends Component {
           <div className="hero-image leadership-hero">
             <div className="hero-text">
               <h1>
-                2020 - 2021
+                2021 - 2022
                 <br />
                 Executive Board
               </h1>
