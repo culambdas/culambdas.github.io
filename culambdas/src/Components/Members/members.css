@@ -259,11 +259,11 @@
 
 .roster-info-desc::before {
   content: '';
-  width: 5000px;
+  width: 200vw;
   height: 100%;
   position: absolute;
-  top: 0px;
-  left: -430%;
+  top: 0 px;
+  left: -50%;
   z-index: 0;
   background-color: white;
 }
