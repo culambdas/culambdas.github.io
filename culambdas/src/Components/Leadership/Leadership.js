@@ -74,8 +74,8 @@ const president = {
   'mil-dollars': 'I would buy a yacht and shoot RPGs off it.',
   'fun-fact':
     "On a good day I'm 5'9 and then 5'11 w shoes round it up to 6 foot.",
-  advice: "Don't be scared to give people the benefit of the doubt.",
-  'why-join': 'To push myself to my limits and become a changed person.',
+  "advice": "Don't forget to call your parents every now and then.",
+  "why-join": "To surround myself with a group of people that would challenge me past my limits.",
   'prev-chapter': '',
   name: 'Kazuya "Drift" Chue',
   'main-img': 'Drift.jpg',
@@ -200,9 +200,8 @@ export default class Leadership extends Component {
                         <img
                           alt={e.nickname}
                           src={
-                            require(`../../assets/members/${
-                              e['main-img'] ? e['main-img'] : 'default.jpg'
-                            }`).default
+                            require(`../../assets/members/${e['main-img'] ? e['main-img'] : 'default.jpg'
+                              }`).default
                           }
                         />
                       </div>
