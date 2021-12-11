@@ -1,46 +1,18 @@
 import { AiOutlineDown } from 'react-icons/ai';
-import memberMap from '../../memberMap.json';
-import './membermodal.css';
+import './leadershipmodal.css';
 
-const MemberModal = (props) => {
-  let entry;
-  if (!props.activeBro) {
-    entry = null;
-  } else {
-    entry = props.members[props.activeClass].find(
-      (e) => e.nickname === props.activeBro
-    );
-  }
+const LeadershipModal = (props) => {
+  let entry = props.members.find((e) => e.nickname === props.activeBro);
 
   const generateLink = (name, more = false) => {
     let fst = name.indexOf('"');
     let tmp = name.slice(fst + 1);
     let snd = tmp.indexOf('"');
-    let nickname = tmp.slice(0, snd);
-    if (
-      fst !== -1 &&
-      name &&
-      memberMap.hasOwnProperty(nickname) &&
-      props.enableNavigation
-    ) {
-      return (
-        <>
-          <span
-            className="roster-info-link"
-            onClick={() => props.setActive(memberMap[nickname].class, nickname)}
-          >
-            {name}
-          </span>
-          {more ? <span>, </span> : null}
-        </>
-      );
-    } else {
-      return (
-        <>
-          <span>{name}</span> {more ? <span>, </span> : null}
-        </>
-      );
-    }
+    return (
+      <>
+        <span>{name}</span> {more ? <span>, </span> : null}
+      </>
+    );
   };
 
   return entry ? (
@@ -67,7 +39,7 @@ const MemberModal = (props) => {
             <ul>
               <li>
                 <span className="roster-info-category">Big Bro: </span>
-                {generateLink(entry['big-bro'])}
+                {entry['big-bro']}
               </li>
               <li>
                 <span className="roster-info-category">Little Bro(s): </span>
@@ -167,4 +139,4 @@ const MemberModal = (props) => {
   ) : null;
 };
 
-export default MemberModal;
+export default LeadershipModal;

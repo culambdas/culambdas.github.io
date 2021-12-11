@@ -4379,7 +4379,11 @@
       "major": "Industrial Labor Relations",
       "year": "2018",
       "big-bro": "Gregory \"Honker\" Mak",
-      "little-bro": ["Nathan \"Rhetoric\" Bala", "Matt \"Ouroboros\" Kimn"],
+      "little-bro": [
+        "Nathan \"Rhetoric\" Bala",
+        "Matt \"Ouroboros\" Kimn",
+        "Joseph \"Breaker\" Mo"
+      ],
       "email": "tgz2@cornell.edu",
       "facebook": "fb.com/tyler.zhang.3",
       "birthday": "Januray 8, 1996",

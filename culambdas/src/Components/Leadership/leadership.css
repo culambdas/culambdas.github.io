@@ -50,6 +50,11 @@
   overflow: hidden;
   width: 100%;
   color: white;
+  cursor: pointer;
+}
+
+.leadership-content ul li:hover > .leadership-photo img {
+  opacity: 0.7;
 }
 
 .leadership-photo {
