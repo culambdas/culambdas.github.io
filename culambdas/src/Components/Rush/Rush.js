@@ -1,7 +1,7 @@
 import './rush.css';
 import nebula from '../../assets/images/nebula.mp4';
-import fa21front from '../../assets/images/rush/front.png';
-import fa21back from '../../assets/images/rush/back.png';
+import fa21front from '../../assets/images/rush/front.jpeg';
+import fa21back from '../../assets/images/rush/back.jpeg';
 
 const Rush = () => {
   return (
