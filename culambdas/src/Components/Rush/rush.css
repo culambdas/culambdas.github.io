@@ -1,0 +1,109 @@
+.rush-hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nebula {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: min(80vw, 80vh);
+  height: min(80vw, 80vh);
+  perspective: min(80vw, 80vh);
+  -webkit-perspective: min(80vw, 80vh);
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: calc(min(80vw, 80vh));
+  margin: auto;
+  width: min(80vw, 80vh);
+  height: min(80vw, 80vh);
+}
+
+.rush-hero img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: min(80vw, 80vh);
+  height: min(80vw, 80vh);
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+  backface-visibility: hidden;
+
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
+
+.rush-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  text-align: justify;
+}
+
+.rush-container h1 {
+  font-size: 3em;
+}
+
+.rush-faq {
+  text-align: left justify;
+}
+
+.rush-container h3 {
+  margin: 0;
+}
