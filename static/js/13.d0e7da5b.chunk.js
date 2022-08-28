@@ -1,0 +1,2 @@
+(this.webpackJsonpculambdas=this.webpackJsonpculambdas||[]).push([[13],{68:function(t,a,c){"use strict";c.d(a,"a",(function(){return r}));var n=c(66);function r(t){return Object(n.a)({tag:"svg",attr:{viewBox:"0 0 16 16",fill:"currentColor"},child:[{tag:"path",attr:{d:"M16 5H0V4h16v1zm0 8H0v-1h16v1zm0-4.008H0V8h16v.992z"}}]})(t)}}}]);
+//# sourceMappingURL=13.d0e7da5b.chunk.js.map
