@@ -1,4 +1,5 @@
 export const allClasses = {
+  'alpha-nu': 'Alpha Nu',
   'alpha-mu': 'Alpha Mu',
   'alpha-kappa': 'Alpha Kappa',
   'alpha-iota': 'Alpha Iota',

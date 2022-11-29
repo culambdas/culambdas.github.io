@@ -14,7 +14,7 @@ export default class ActiveHouse extends Component {
     this.setActive = this.setActive.bind(this);
 
     this.state = {
-      activeClass: 'alpha-mu',
+      activeClass: 'alpha-nu',
       activeBro: '',
     };
   }
