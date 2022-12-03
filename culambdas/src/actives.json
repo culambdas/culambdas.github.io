@@ -1,4 +1,78 @@
 {
+  "alpha-nu": [
+    {
+      "class": "alpha-nu",
+      "number": "#176",
+      "nickname": "Loki",
+      "major": "Computer Science",
+      "year": "2025",
+      "big-bro": "Richard \"Concord\" Lin",
+      "little-bro": ["N/A"],
+      "email": "nh333@cornell.edu",
+      "facebook": "https://www.facebook.com/profile.php?id=100013432429243",
+      "birthday": "April 21, 2003",
+      "hometown": "Glen Rock, NJ",
+      "dream-ride": "Porsche 911 Turbo",
+      "fav-quote": "\"It is never too late to become the person you might have been.\"",
+      "mil-dollars": "I would buy a Porsche 911 Turbo and save the rest for my parents.",
+      "fun-fact": "My favorite animal is the great white shark.",
+      "advice": "Having new experiences will lead to life-long memories and relationships.",
+      "why-join": "To find a caring community where I would be pushed to grow as a student, friend, and person.",
+      "prev-chapter": "",
+      "name": "Nicolas \"Loki\" Hernandez-Torre",
+      "main-img": "Loki.jpg",
+      "modal-img": "Loki.jpg",
+      "bio": ""
+    },
+    {
+      "class": "alpha-nu",
+      "number": "#177",
+      "nickname": "Apollo",
+      "major": "Finance",
+      "year": "2025",
+      "big-bro": "Akimasa \"Saros\" Ihara",
+      "little-bro": ["N/A"],
+      "email": "az396@cornell.edu",
+      "facebook": "https://www.facebook.com/allan.zhang8?mibextid=LQQJ4d",
+      "birthday": "June 28, 2002",
+      "hometown": "Sydney, Australia",
+      "dream-ride": "Battle Bus",
+      "fav-quote": "\"Everything happens for a reason.\"",
+      "mil-dollars": "📈📈📈",
+      "fun-fact": "I’m good at driving.",
+      "advice": "Carbon is here if you ever need help.",
+      "why-join": "I wanted to find a tight-knit community which would allow me to enjoy myself but also help me to grow as an individual.",
+      "prev-chapter": "",
+      "name": "Allan \"Apollo\" Zhang",
+      "main-img": "Apollo.jpg",
+      "modal-img": "Apollo.jpg",
+      "bio": ""
+    },
+    {
+      "class": "alpha-nu",
+      "number": "#178",
+      "nickname": "Invictus",
+      "major": "Biological Sciences",
+      "year": "2025",
+      "big-bro": "Kevin \"Surge\" Chen",
+      "little-bro": ["N/A"],
+      "email": "ddy9@cornell.edu",
+      "facebook": "fb.com/danielyu.deng",
+      "birthday": "November 13, 2003",
+      "hometown": "Long Island, NY",
+      "dream-ride": "'99 Nissan Skyline GT-R R34",
+      "fav-quote": "\"C'mon man, THAT'S TOO EASY!\" - Lebron James",
+      "mil-dollars": "I would start a clothing line and see how far I can take it.",
+      "fun-fact": "I sell hand-painted customized clothing, apparel, and shoes.",
+      "advice": "Advice to transfers* Don't be scared to cast out a wide net to meet more people, but don't forget to keep the connections close with the people you want to be around.",
+      "why-join": "To find a tight-knit community and sense of belonging on campus.",
+      "prev-chapter": "",
+      "name": "Daniel \"Invictus\" Yu",
+      "main-img": "Invictus.jpg",
+      "modal-img": "Invictus.jpg",
+      "bio": ""
+    }
+  ],
   "alpha-mu": [
     {
       "class": "alpha-mu",
@@ -202,32 +276,6 @@
     },
     {
       "class": "alpha-kappa",
-      "number": "#169",
-      "nickname": "Odyssey",
-      "major": "Computer Sciences and Economics",
-      "year": "2023",
-      "big-bro": "Daniel \"Resonance\" Zhan",
-      "little-bro": [
-        "N/A"
-      ],
-      "email": "zj53@cornell.edu",
-      "facebook": "www.facebook.com/jacky.gam.77",
-      "birthday": "September 24, 2000",
-      "hometown": "Hong Kong",
-      "dream-ride": "McLaren Artura",
-      "fav-quote": "\"Real g move in silence like lasagna -Lil Wayne\"",
-      "mil-dollars": "Use 1% on poker and the rest on buying Tesla options, give half of the gains to my parents afterwards",
-      "fun-fact": "I can finish a whole meal in 10.5 seconds",
-      "advice": "Nothing is inherently bad or good, something bad in the present could lead you to good things in the future",
-      "why-join": "To meet people and build long lasting friendships that last a lifetime",
-      "prev-chapter": "",
-      "name": "Jacky \"Odyssey\" Jin",
-      "main-img": "Odyssey.jpg",
-      "modal-img": "Odyssey.jpg",
-      "bio": "Jacky was born in Zhejiang, China, but moved to Hong Kong when he was thirteen years old. He has lived in Hong Kong ever since, where he enjoyed playing basketball and poker. When he is not studying at Uris stacks, you can often see him sleeping, chilling with his friends in his apartment, or exploring Ithaca. Hit him up if you need someone to eat with as he’s always down for some good food."
-    },
-    {
-      "class": "alpha-kappa",
       "number": "#170",
       "nickname": "Sentinel",
       "major": "Biological Engineering",
@@ -278,32 +326,6 @@
       "name": "Sam \"Vega\" Jegal",
       "main-img": "Vega.jpg",
       "modal-img": "Vega-modal.jpg",
-      "bio": ""
-    },
-    {
-      "class": "alpha-iota",
-      "number": "#163",
-      "nickname": "Evo",
-      "major": "Computer Science",
-      "year": "2023",
-      "big-bro": "Naotaka \"Enigma\" Kinoshita",
-      "little-bro": [
-        "N/A"
-      ],
-      "email": "jt568@cornell.edu",
-      "facebook": "fb.com/jasontung12345",
-      "birthday": "August 26, 2001",
-      "hometown": "Queens, NY",
-      "dream-ride": "Piranha Prowler",
-      "fav-quote": "\"Don’t look at my double chinnn\"",
-      "mil-dollars": "Eat Maru Ramen every day.",
-      "fun-fact": "I stay hydrated.",
-      "advice": "Don’t feel like you need to impress others.",
-      "why-join": "Ron is my idol.",
-      "prev-chapter": "",
-      "name": "Jason \"Evo\" Tung",
-      "main-img": "Evo.jpg",
-      "modal-img": "Evo.jpg",
       "bio": ""
     },
     {
@@ -420,7 +442,7 @@
       "year": "2023",
       "big-bro": "Andrew \"Gamble\" Wang",
       "little-bro": [
-        "N/A"
+        "Allan \"Apollo\" Zhang", "Daniel \"Invictus\" Yu"
       ],
       "email": "ai239@cornell.edu",
       "facebook": "fb.com/akimasa.ihara.1",
@@ -524,7 +546,7 @@
       "year": "2023",
       "big-bro": "Alston \"Mochi\" Wang",
       "little-bro": [
-        "N/A"
+        "Nicolas \"Loki\" Hernandez-Torre"
       ],
       "email": "rl556@cornell.edu",
       "facebook": "fb.com/richardlin112",
@@ -585,8 +607,8 @@
       "dream-ride": "High Speed Rail",
       "fav-quote": "\"No more half-measures.\" -Mike Ehrmantraut",
       "mil-dollars": "Buy two college textbooks, maybe three if I'm lucky.",
-      "fun-fact": "I used to swim competitively but quit due to a chlorine allergy.",
-      "advice": "Keep trying new things! You can't predict what will work out.",
+      "fun-fact": "I was a nationally ranked junior badminton player! College has made it difficult to continue with that, however.",
+      "advice": "Mental health is important! Don't overload yourself.",
       "why-join": "To get to know some awesome dudes.",
       "prev-chapter": "",
       "name": "Daniel \"Resonance\" Zhan",
