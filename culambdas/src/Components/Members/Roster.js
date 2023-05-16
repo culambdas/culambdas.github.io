@@ -13,7 +13,7 @@ export default class Roster extends Component {
     this.setActive = this.setActive.bind(this);
 
     this.state = {
-      activeClass: 'alpha-nu',
+      activeClass: 'alpha-xi',
       activeBro: '',
     };
   }

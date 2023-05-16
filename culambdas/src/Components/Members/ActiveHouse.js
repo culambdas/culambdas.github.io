@@ -14,7 +14,7 @@ export default class ActiveHouse extends Component {
     this.setActive = this.setActive.bind(this);
 
     this.state = {
-      activeClass: 'alpha-nu',
+      activeClass: 'alpha-xi',
       activeBro: '',
     };
   }
@@ -58,7 +58,7 @@ export default class ActiveHouse extends Component {
           <div className="hero-image active-house-hero">
             <div className="hero-text">
               <h1>
-                Fall 2022 <br /> Active House
+                Spring 2023 <br /> Active House
               </h1>
             </div>
           </div>
