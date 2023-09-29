@@ -176,7 +176,7 @@ export default class Leadership extends Component {
           <div className="hero-image leadership-hero">
             <div className="hero-text">
               <h1>
-                2021 - 2022
+                2022 - 2023
                 <br />
                 Executive Board
               </h1>
