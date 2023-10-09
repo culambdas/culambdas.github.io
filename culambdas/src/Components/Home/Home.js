@@ -22,13 +22,13 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex-container" style={{ marginTop: 80 }}>
+      <div className="flex-container" style={{ marginTop: 80, display: 'inline-flex' }}>
         <div className="col-5">
           <img
             src={require('../../assets/images/president.jpg').default}
             alt="President"
-            height={360}
-            width={420}
+            style={{ width: '30%', display: 'block', margin: 'auto'   }}
+
           />
         </div>
         <div className="col-6 justify-text">
