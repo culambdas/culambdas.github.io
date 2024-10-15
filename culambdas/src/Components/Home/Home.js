@@ -27,7 +27,7 @@ const Home = () => {
           <img
             src={require('../../assets/images/president.jpg').default}
             alt="President"
-            style={{ width: '400px', display: 'block', margin: 'auto'}}
+            style={{ width: '30%', display: 'block', margin: 'auto'   }}
 
           />
         </div>
