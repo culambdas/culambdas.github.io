@@ -18,9 +18,9 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "deploy": "node src/prebuild.js && react-scripts build && gh-pages -d build",
+    "deploy": "make deploy",
     "start": "node src/prebuild.js && react-scripts start",
-    "build": "node src/prebuild.js && react-scripts build",
+    "build": "make build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
