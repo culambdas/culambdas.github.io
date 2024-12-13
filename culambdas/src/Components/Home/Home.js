@@ -52,7 +52,7 @@ const Home = () => {
             reach out to any of the executive board, active brothers, or alumni.
           </p>
           <h4>
-            Ryan "Point Blank" Wong
+            Aaron "Phantom" Song
             <br />
             Chapter President
           </h4>
