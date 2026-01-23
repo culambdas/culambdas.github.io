@@ -23,6 +23,7 @@
   bottom: 0;
   top: 0;
   margin: auto;
+  margin-top: -260px;
   width: min(80vw, 80vh);
   height: min(80vw, 80vh);
   perspective: min(80vw, 80vh);
