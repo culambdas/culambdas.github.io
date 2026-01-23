@@ -19,7 +19,7 @@
   },
   "scripts": {
     "deploy": "make deploy",
-    "start": "node src/prebuild.js && react-scripts start",
+    "start": "node src/prebuild.js && NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
     "build": "make build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
