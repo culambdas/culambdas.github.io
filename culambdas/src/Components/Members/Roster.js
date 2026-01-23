@@ -14,7 +14,7 @@ export default class Roster extends Component {
 
     this.state = {
 
-      activeClass: 'alpha-xi',
+      activeClass: 'alpha-tau',
 
       activeBro: '',
     };
