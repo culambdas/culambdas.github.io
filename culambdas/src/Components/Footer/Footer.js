@@ -64,7 +64,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="footer-content">
-        <h3>© 2023 Cornell Lambda Phi Epsilon</h3>
+        <h3>© 2026 Cornell Lambda Phi Epsilon</h3>
         <p>Site created by Jongwan Kim &#38; Samuel Lye</p>
       </div>
     </footer>
