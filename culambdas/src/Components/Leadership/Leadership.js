@@ -22,8 +22,8 @@ const secretary = {
   "why-join": "",
   "prev-chapter": "",
   "name": "Connor \"Nova\" Lucente",
-  "main-img": "",
-  "modal-img": "",
+  "main-img": "Nova.jpg",
+  "modal-img": "Nova.jpg",
   "bio": ""
 };
 
