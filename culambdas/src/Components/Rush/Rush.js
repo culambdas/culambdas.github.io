@@ -1,7 +1,7 @@
 import './rush.css';
 import nebula from '../../assets/images/nebula.mp4';
-import fa21front from '../../assets/images/rush/front.jpeg';
-import fa21back from '../../assets/images/rush/back.jpeg';
+import sp26front from '../../assets/images/rush/front.jpg';
+import sp26back from '../../assets/images/rush/back.jpg';
 
 const Rush = () => {
   return (
@@ -14,15 +14,15 @@ const Rush = () => {
         <div className="flip-container">
           <div className="flipper">
             <div className="front">
-              <img src={fa21front} alt="rush-cover" />
+              <img src={sp26front} alt="rush-cover" />
             </div>
             <div className="back">
-              <img src={fa21back} alt="rush-schedule" />
+              <img src={sp26back} alt="rush-schedule" />
             </div>
           </div>
         </div>
       </div>
-
+      
       <div className="rush-container">
         <h1>Rush FAQ</h1>
         <div className="rush-faq">

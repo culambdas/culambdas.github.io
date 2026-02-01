@@ -35,7 +35,7 @@ const Home = () => {
           <h2>Letter from our Chapter President</h2>
           <p>
             Welcome to the official website for the Cornell University: Alpha Kappa Chapter of Lambda Phi Epsilon International Fraternity, Inc. 
-            It is an honor to serve as Alpha Kappa chapter’s President for 2023. 
+            It is an honor to serve as Alpha Kappa chapter’s President for 2026. 
             Throughout my time at Cornell, I have seen this chapter cross a multitude of passionate, dedicated, and talented brothers, 
             and I am excited to witness and contribute to our chapter’s bright future. The Alpha Kappa chapter has remained a strong beacon of leadership, philanthropy, 
             and cultural awareness on campus and has continued to provide a welcoming environment for young men of Asian descent to bond and grow together. 
@@ -52,7 +52,7 @@ const Home = () => {
             reach out to any of the executive board, active brothers, or alumni.
           </p>
           <h4>
-            Aaron "Phantom" Song
+            Jesse "Phoenix" Lin
             <br />
             Chapter President
           </h4>

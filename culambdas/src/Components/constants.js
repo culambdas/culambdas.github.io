@@ -1,4 +1,6 @@
 export const allClasses = {
+  'alpha-tau': 'Alpha Tau',
+  'alpha-sigma': 'Alpha Sigma',
   'alpha-rho': 'Alpha Rho',
   'alpha-pi': 'Alpha Pi',
   'alpha-omicron': 'Alpha Omicron',

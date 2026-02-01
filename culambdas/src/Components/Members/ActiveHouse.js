@@ -14,7 +14,7 @@ export default class ActiveHouse extends Component {
     this.setActive = this.setActive.bind(this);
 
     this.state = {
-      activeClass: 'alpha-rho',
+      activeClass: 'alpha-tau',
 
       activeBro: '',
     };
@@ -60,7 +60,7 @@ export default class ActiveHouse extends Component {
             <div className="hero-text">
               <h1>
 
-                Spring 2025 <br /> Active House
+                Spring 2026 <br /> Active House
 
               </h1>
             </div>
