@@ -22,42 +22,43 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex-container" style={{ marginTop: 80, display: 'inline-flex' }}>
-        <div className="col-5">
-          <img
-            src={require('../../assets/images/president.jpg').default}
-            alt="President"
-            style={{ width: '30%', display: 'block', margin: 'auto'   }}
+      <section className="president-letter">
+        <div className="president-letter-card">
+          <div className="president-portrait">
+            <h2>Letter from our Chapter President</h2>
+            <div className="president-divider" />
+            <img
+              src={require('../../assets/images/president.jpg').default}
+              alt="Chapter President"
+            />
+            <div className="president-signature">
+              <span className="president-signature-name">Jesse "Phoenix" Lin</span>
+              <span className="president-signature-role">Chapter President</span>
+            </div>
+          </div>
 
-          />
+          <div className="president-body">
+            <p>
+              Welcome to the official website for the Cornell University: Alpha Kappa Chapter of Lambda Phi Epsilon International Fraternity, Inc.
+              It is an honor to serve as Alpha Kappa chapter’s President for 2026.
+              Throughout my time at Cornell, I have seen this chapter cross a multitude of passionate, dedicated, and talented brothers,
+              and I am excited to witness and contribute to our chapter’s bright future. The Alpha Kappa chapter has remained a strong beacon of leadership, philanthropy,
+              and cultural awareness on campus and has continued to provide a welcoming environment for young men of Asian descent to bond and grow together.
+              Our active house is uniquely diverse, yet united in our passion for our brotherhood.
+              As President, I intend to capitalize on this diversity and utilize each brother’s individual strengths to further solidify our position on
+              campus as Leaders Among Men. Lambda Phi Epsilon has shaped me into the man I am today and provided me with a lifelong family,
+              and I am endlessly grateful for the opportunity to be a part of this eternal brotherhood.
+            </p>
+            <p>
+              Thank you for taking the time to learn about my thoughts on Lambda Phi Epsilon.
+              Please feel free to navigate through this website to learn more about our brothers,
+              activities, and core values to get further insight into our brotherhood.
+              If you find yourself with any questions or concerns, please feel comfortable to
+              reach out to any of the executive board, active brothers, or alumni.
+            </p>
+          </div>
         </div>
-        <div className="col-6 justify-text">
-          <h2>Letter from our Chapter President</h2>
-          <p>
-            Welcome to the official website for the Cornell University: Alpha Kappa Chapter of Lambda Phi Epsilon International Fraternity, Inc. 
-            It is an honor to serve as Alpha Kappa chapter’s President for 2026. 
-            Throughout my time at Cornell, I have seen this chapter cross a multitude of passionate, dedicated, and talented brothers, 
-            and I am excited to witness and contribute to our chapter’s bright future. The Alpha Kappa chapter has remained a strong beacon of leadership, philanthropy, 
-            and cultural awareness on campus and has continued to provide a welcoming environment for young men of Asian descent to bond and grow together. 
-            Our active house is uniquely diverse, yet united in our passion for our brotherhood. 
-            As President, I intend to capitalize on this diversity and utilize each brother’s individual strengths to further solidify our position on 
-            campus as Leaders Among Men. Lambda Phi Epsilon has shaped me into the man I am today and provided me with a lifelong family, 
-            and I am endlessly grateful for the opportunity to be a part of this eternal brotherhood.
-          </p>
-          <p>
-            Thank you for taking the time to learn about my thoughts on Lambda Phi Epsilon. 
-            Please feel free to navigate through this website to learn more about our brothers, 
-            activities, and core values to get further insight into our brotherhood. 
-            If you find yourself with any questions or concerns, please feel comfortable to 
-            reach out to any of the executive board, active brothers, or alumni.
-          </p>
-          <h4>
-            Jesse "Phoenix" Lin
-            <br />
-            Chapter President
-          </h4>
-        </div>
-      </div>
+      </section>
 
       <div className="home-grid">
         <div className="home-grid-item" onClick={() => navigate('about')}>

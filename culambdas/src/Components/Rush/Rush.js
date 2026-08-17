@@ -4,9 +4,20 @@ import sp26front from '../../assets/images/rush/front.jpg';
 import sp26back from '../../assets/images/rush/back.jpg';
 
 const Rush = () => {
+  // Toggle to false once rush season ends to swap the graphic for the announcement.
+  const isRushActive = false;
+
   return (
-    <section>
-      <div className="rush-hero">
+    <section id="rush">
+      <div className="hero">
+        <div className="hero-image rush-page-hero">
+          <div className="hero-text">
+            <h1>Rush</h1>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="rush-hero">
         <video className="nebula" autoPlay loop muted>
           <source src={nebula} type="video/mp4" />
         </video>
@@ -21,8 +32,25 @@ const Rush = () => {
             </div>
           </div>
         </div>
+      </div> */}
+
+      <div className="rush-announcement">
+        {isRushActive ? (
+          <div className="rush-graphic">
+            <img src={sp26front} alt="Rush cover" />
+            <img src={sp26back} alt="Rush schedule" />
+          </div>
+        ) : (
+          <div className="rush-over">
+            <h2>FA26 Rush Coming Soon</h2>
+            <p>
+              Keep an eye on this page and @culambdas on Instagram for details on our next rush
+              season.
+            </p>
+          </div>
+        )}
       </div>
-      
+
       <div className="rush-container">
         <h1>Rush FAQ</h1>
         <div className="rush-faq">

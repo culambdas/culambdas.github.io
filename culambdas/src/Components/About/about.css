@@ -118,3 +118,15 @@
   font-size: 14px;
   margin: 10px 0px 0px 0px;
 }
+
+
+
+.flex-container {
+  display: flex;
+  align-items: center; /* add this */
+  padding-bottom: 20px;
+}
+
+.about-image {
+  border-radius: 10px;
+}

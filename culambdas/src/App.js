@@ -11,6 +11,7 @@ const ActiveHouse = lazy(() => import('./Components/Members/ActiveHouse'));
 const Roster = lazy(() => import('./Components/Members/Roster'));
 const Rush = lazy(() => import('./Components/Rush/Rush'));
 const About = lazy(() => import('./Components/About/About'));
+const NotFound = lazy(() => import('./Components/NotFound/NotFound'));
 const Footer = lazy(() => import('./Components/Footer/Footer'));
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
           <Route exact path="/roster" element={<Roster />} />
           <Route exact path="/rush" element={<Rush />} />
           <Route exact path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </Suspense>
