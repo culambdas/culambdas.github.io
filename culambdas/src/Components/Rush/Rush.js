@@ -5,7 +5,7 @@ import sp26back from '../../assets/images/rush/back.jpg';
 
 const Rush = () => {
   // Toggle to false once rush season ends to swap the graphic for the announcement.
-  const isRushActive = true;
+  const isRushActive = false;
 
   return (
     <section id="rush">
@@ -42,10 +42,9 @@ const Rush = () => {
           </div>
         ) : (
           <div className="rush-over">
-            <h2>Rush Is Now Over</h2>
+            <h2>FA26 Rush Coming Soon</h2>
             <p>
-              Thank you to everyone who came out to meet the brothers! Keep an
-              eye on this page and @culambdas on Instagram for details on our next rush
+              Keep an eye on this page and @culambdas on Instagram for details on our next rush
               season.
             </p>
           </div>
