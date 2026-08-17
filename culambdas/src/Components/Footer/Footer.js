@@ -25,8 +25,8 @@ const Footer = () => {
         <h3>Get In Touch</h3>
         <ul>
           <li>
-            <a href="mailto:aklphie@gmail.com">
-              <i className="icon-gmail"></i> aklphie@gmail.com
+            <a href="mailto:lphieak@gmail.com">
+              <i className="icon-gmail"></i> lphieak@gmail.com
             </a>
           </li>
           <li>

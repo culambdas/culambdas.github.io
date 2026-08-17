@@ -14,7 +14,7 @@ const About = () => {
       <div className="fast-facts">
         <div className="fast-facts-intro">
           <div className="fast-facts-text">
-            <h3>Mission</h3>
+          <h3 style={{ color: '#043e79' }}>Mission </h3>
             <p>
               To guide men on a lifelong discovery of authenticity and personal
               growth.
@@ -22,7 +22,7 @@ const About = () => {
           </div>
 
           <div className="fast-facts-text">
-            <h3>Vision</h3>
+            <h3 style={{ color: '#043e79' }}>Vision</h3>
             <p>
               A world where Lambda men live authentic, fulfilling lives and
               contribute through the pursuit of their noble purpose.
@@ -30,7 +30,7 @@ const About = () => {
           </div>
 
           <div className="fast-facts-text">
-            <h3>Core Values</h3>
+            <h3 style={{ color: '#043e79' }}>Core Values</h3>
             <p>
               <b>Authenticity</b>: Demonstration of one’s true self to the
               world, despite external expectations.
@@ -59,7 +59,7 @@ const About = () => {
               <i className="icon-quote-left about-icon" />
             </div>
             <div className="about-icon-text">
-              <h5>Motto</h5>
+              <h5 style={{ color: '#043e79' }}>Motto</h5>
               <p>Leaders Among Men</p>
             </div>
           </div>
@@ -68,7 +68,7 @@ const About = () => {
               <i className="icon-flag about-icon" />
             </div>
             <div className="about-icon-text">
-              <h5>Colors</h5>
+              <h5 style={{ color: '#043e79' }}>Colors</h5>
               <p>Royal Blue and White</p>
             </div>
           </div>
@@ -78,7 +78,7 @@ const About = () => {
               <i className="icon-shield about-icon" />
             </div>
             <div className="about-icon-text">
-              <h5>Mascot</h5>
+              <h5 style={{ color: '#043e79' }}>Mascot</h5>
               <p>Dragon</p>
             </div>
           </div>
@@ -88,7 +88,7 @@ const About = () => {
               <i className="icon-group about-icon" />
             </div>
             <div className="about-icon-text">
-              <h5>Nicknames</h5>
+              <h5 style={{ color: '#043e79' }}>Nicknames</h5>
               <p>Lambdas, LFE, LPhiE, 人中王</p>
             </div>
           </div>
@@ -97,7 +97,7 @@ const About = () => {
               <i className="icon-bank about-icon" />
             </div>
             <div className="about-icon-text">
-              <h5>Founding Campus</h5>
+              <h5 style={{ color: '#043e79' }} >Founding Campus</h5>
               <p>University of California Los Angeles</p>
             </div>
           </div>
@@ -105,8 +105,8 @@ const About = () => {
             <div className="about-icon-container">
               <i className="icon-gavel about-icon" />
             </div>
-            <div className="about-icon-text">
-              <h5>Founding date</h5>
+            <div className="about-icon-text"> 
+              <h5 style={{ color: '#043e79' }} >Founding date</h5>
               <p>February 25, 1981 (UCLA)</p>
               <p>November 14, 1999 (Cornell)</p>
             </div>
@@ -116,7 +116,7 @@ const About = () => {
               <i className="icon-globe about-icon" />
             </div>
             <div className="about-icon-text">
-              <h5>Fraternal Scope</h5>
+              <h5 style={{ color: '#043e79' }} >Fraternal Scope</h5>
               <p>International</p>
             </div>
           </div>
@@ -125,7 +125,7 @@ const About = () => {
               <i className="icon-trophy about-icon" />
             </div>
             <div className="about-icon-text">
-              <h5>Fraternal Classification</h5>
+              <h5 style={{ color: '#043e79' }} >Fraternal Classification</h5>
               <p>Social and Service</p>
             </div>
           </div>
@@ -461,7 +461,7 @@ const About = () => {
           <h2>About</h2>
           <p>
             The mission of the Cornell Lambda Phi Epsilon Alumni Association is
-            as follow: To cultivate the bonds established as brothers of Cornell
+            as follows: To cultivate the bonds established as brothers of Cornell
             Lambda Phi Epsilon, and to continue developing ourselves as leaders
             in our personal pursuits, professional aspirations, and communities.
           </p>

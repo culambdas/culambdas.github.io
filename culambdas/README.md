@@ -37,6 +37,10 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 Run `npm run build` before running this command. Updates the github pages build with the latest version.
 
+If that doesn't work run this sequence to update and deploy the website: 
+`culambdas@0.1.0 deploy`
+`make deploy`
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
