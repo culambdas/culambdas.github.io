@@ -1,11 +1,11 @@
 import './rush.css';
-import nebula from '../../assets/images/nebula.mp4';
-import sp26front from '../../assets/images/rush/front.jpg';
-import sp26back from '../../assets/images/rush/back.jpg';
+// import nebula from '../../assets/images/nebula.mp4';
+import fa26front from '../../assets/images/rush/FA26_1.jpg';
+import fa26back from '../../assets/images/rush/FA26_2.jpg';
 
 const Rush = () => {
   // Toggle to false once rush season ends to swap the graphic for the announcement.
-  const isRushActive = false;
+  const isRushActive = true;
 
   return (
     <section id="rush">
@@ -37,8 +37,8 @@ const Rush = () => {
       <div className="rush-announcement">
         {isRushActive ? (
           <div className="rush-graphic">
-            <img src={sp26front} alt="Rush cover" />
-            <img src={sp26back} alt="Rush schedule" />
+            <img src={fa26front} alt="Rush cover" />
+            <img src={fa26back} alt="Rush schedule" />
           </div>
         ) : (
           <div className="rush-over">

@@ -1,7 +1,7 @@
 # Variables
 BUILD_DIR = build              # Directory where the build output is located
 CNAME_PATH = build/CNAME
-DOMAIN = culambdas.com
+DOMAIN = culfe.com
 # Domain name for the CNAME file
 
 # Default target (runs when `make` or `npm run deploy` is called)
@@ -9,8 +9,8 @@ all: deploy
 
 # Build the project by running the prebuild script and React build
 build:
-	node src/prebuild.js           # Run the prebuild script
-	npx react-scripts build            # Build the React app
+	node src/prebuild.js
+	NODE_OPTIONS=--openssl-legacy-provider npx react-scripts build
 
 # Write the domain to the CNAME file in the subfolder
 create-cname:
