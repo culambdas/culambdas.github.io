@@ -5,9 +5,9 @@ const LeadershipModal = (props) => {
   let entry = props.members.find((e) => e.nickname === props.activeBro);
 
   const generateLink = (name, more = false) => {
-    let fst = name.indexOf('"');
-    let tmp = name.slice(fst + 1);
-    let snd = tmp.indexOf('"');
+    // let fst = name.indexOf('"');
+    // let tmp = name.slice(fst + 1);
+    // let snd = tmp.indexOf('"');
     return (
       <>
         <span>{name}</span> {more ? <span>, </span> : null}
